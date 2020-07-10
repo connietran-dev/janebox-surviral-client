@@ -1,6 +1,16 @@
 # Apocaly with JANEbox Games
 
+<!-- Put project screenshot here
+![]() -->
+
+## Project Description
 This project is a multiplayer, storyline game that allows players to work together and defeat a viral enemy and save the world!
+This is the client-side repo
+
+## Project Links
+<!-- * [Deployed Client]()
+* [Deployed Server]() -->
+* [Server Repo](https://github.com/connietran-dev/janebox-apocaly-server)
 
 ## Dependencies
 * [NodeJS](https://nodejs.org/es/)
@@ -15,7 +25,7 @@ This project is a multiplayer, storyline game that allows players to work togeth
 See [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## Wireframes
-...
+![](./public/wireframes.png)
 
 ## User Stories
 ...
