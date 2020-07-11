@@ -1,12 +1,22 @@
 import React from 'react'
-import Root from './Root'
-import { HashRouter as Router } from 'react-router-dom'
+
+import { Route, Switch } from 'react-router-dom'
+
+import Home from './Home'
+import SetPlayer from './SetPlayer'
+import PlayGame from './PlayGame'
+import GameOver from './GameOver'
 
 function App() {
   return (
-    <Router>
-      <Root />
-    </Router>
+    <>
+      <Switch>
+        <Route component={Home} exact path="/" />
+        <Route component={SetPlayer} path="/set-player" />
+        <Route component={PlayGame} path="/play" />
+        <Route component={GameOver} path="/game-over" />
+      </Switch>
+    </>
   )
 }
 
