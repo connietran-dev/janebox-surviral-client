@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f9b4525b5884239b95df2af96ad66e86",
+    "revision": "bd98f42e49e2015fe0af6d0cc3bfa721",
     "url": "/janebox-surviral-client/index.html"
   },
   {
-    "revision": "bbcfaab4ac1e5368f714",
+    "revision": "f469af163cebc7c954f0",
     "url": "/janebox-surviral-client/static/css/main.1758dff8.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/janebox-surviral-client/static/js/2.255a06a1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bbcfaab4ac1e5368f714",
-    "url": "/janebox-surviral-client/static/js/main.1f0ee620.chunk.js"
+    "revision": "f469af163cebc7c954f0",
+    "url": "/janebox-surviral-client/static/js/main.2a14756c.chunk.js"
   },
   {
     "revision": "31aa2793a4b01b695a5e",
