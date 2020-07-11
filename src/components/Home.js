@@ -1,13 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
   return (
     <>
       <h1>Home Page</h1>
-      <button>New Game</button>
+      <Link to="/set-player">
+        <button>New Game</button>
+      </Link>
       <form>
         <input type="text" />
-        <button>Join Game</button>
+        <Link to="/set-player">
+          <button>Join Game</button>
+        </Link>
       </form>
     </>
   )
