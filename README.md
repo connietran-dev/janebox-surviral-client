@@ -8,8 +8,8 @@ This project is a multiplayer, storyline game that allows players to work togeth
 This is the client-side repo
 
 ## Project Links
-<!-- * [Deployed Client]()
-* [Deployed Server]() -->
+* [Deployed Client](https://connietran-dev.github.io/janebox-surviral-client)
+* [Deployed Server](https://surviral-server.herokuapp.com/)
 * [Server Repo](https://github.com/connietran-dev/janebox-apocaly-server)
 
 ## Dependencies
