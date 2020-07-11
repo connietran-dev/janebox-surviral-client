@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bd98f42e49e2015fe0af6d0cc3bfa721",
+    "revision": "48d1e61582b74460404a9d0a857ff8db",
     "url": "/janebox-surviral-client/index.html"
   },
   {
