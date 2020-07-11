@@ -11,7 +11,7 @@ export default function Home() {
       <form>
         <input type="text" />
         <Link to="/set-player">
-          <button>Join Game</button>
+          <input type="submit" value="Join Game"/>
         </Link>
       </form>
     </>
