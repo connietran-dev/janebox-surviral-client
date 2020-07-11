@@ -1,9 +1,12 @@
 import React from 'react'
-import Home from './Home'
+import Root from './Root'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
-    <Home />
+    <BrowserRouter>
+      <Root />
+    </BrowserRouter>
   )
 }
 
