@@ -16,6 +16,7 @@ This is the client-side repo
 * [NodeJS](https://nodejs.org/es/)
 * [ReactJS](https://es.reactjs.org/)
   - [Create React App](https://github.com/facebook/create-react-app)
+* [`react-router-dom`](https://reactrouter.com/web/guides/quick-start)
 
 ### Scripts
 * `npm start` (runs dev mode @:3000)
