@@ -19,12 +19,13 @@ This is the client-side repo
 * [React Router](https://reactrouter.com/web/guides/quick-start)
 * [React Bootstra](https://react-bootstrap.github.io/getting-started/introduction/)
 
-### Scripts
+### Relevant Scripts
 * `npm start` (runs dev mode @:3000)
-* `npm run bild` (builds app for production)
+* `npm run build` (builds app for production)
+* `npm run deploy` (initiates `predeploy` to build then deploys to gh-pages)
 
 ### Deployment
-See [Deploying a React App* to GitHub Pages](https://github.com/gitname/react-gh-pages) for more information.
+See [Deploying a create-react-app with routing to GitHub pages](https://levelup.gitconnected.com/deploying-a-create-react-app-with-routing-to-github-pages-f386b6ce84c2) for more information.
 
 ## Wireframes
 ![](./public/wireframes.png)
