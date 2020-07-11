@@ -1,4 +1,4 @@
-# Apocaly with JANEbox Games
+# Surviral with JANEbox Games
 
 <!-- Put project screenshot here
 ![]() -->
