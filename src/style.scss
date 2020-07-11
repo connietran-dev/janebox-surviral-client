@@ -1,0 +1,31 @@
+$text-color: #efefef;
+$title-font: 'Bangers', cursive;
+$base-font: 'Montserrat', sans-serif;
+
+body {
+  background: url('./img/abandoned-railway.jpg') no-repeat center center scroll;
+  background-color: #111;
+  background-size: cover;
+  color: $text-color;
+  font-family: $base-font;
+  height: 100vh;
+  text-align: center;
+}
+
+.Home {
+  border: 2px solid red;
+  float: right;
+  margin-top: 40vh;
+  width: 70vw;
+  max-width: 550px;
+
+  h1 {
+    font-family: $title-font;
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+
+  nav {
+    border: 1px solid blue;
+  }
+}
