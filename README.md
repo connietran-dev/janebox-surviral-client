@@ -29,9 +29,3 @@ See [Deploying a create-react-app with routing to GitHub pages](https://levelup.
 
 ## Wireframes
 ![](./public/wireframes.png)
-
-## User Stories
-...
-
-## Stretch Goals
-...
