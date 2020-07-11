@@ -6,7 +6,7 @@ export default function PlayGame() {
     <>
       <h1>Play Game Page</h1>
       <Link to="/game-over">
-        <button>All done!</button>
+        <button className="admin-button">All done!</button>
       </Link>
     </>
   )
