@@ -24,7 +24,7 @@ This is the client-side repo
 * `npm run bild` (builds app for production)
 
 ### Deployment
-See [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See [Deploying a React App* to GitHub Pages](https://github.com/gitname/react-gh-pages) for more information.
 
 ## Wireframes
 ![](./public/wireframes.png)
