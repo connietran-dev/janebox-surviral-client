@@ -2,7 +2,7 @@ $text-color: #efefef;
 $red-text: #5b2a2a;
 $gray-fill: #121212;
 $med-gray-fill: #262626;
-$title-font: 'Bangers', cursive;
+$title-font: 'Bangers', Verdana;
 $base-font: 'Montserrat', sans-serif;
 $basic-shadow: 1px 2px 1px black;
 
@@ -151,30 +151,70 @@ body {
   }
 
   .team-log {
-    border: 5px solid $red-text;
-    background-color: rgba($red-text, .9);
-    border-radius: 10px;
-    height: 9vh;
-    min-height: 2rem;
     float: right;
-    margin-top: -1rem;
-    width: 35vw;
-    min-width: 20rem;
-    font-family: $title-font;
-    color: rgba($text-color, .8);
 
-    h5 {
-      float: left;
-      font-size: 5vh;
-      margin-left: 1rem;
-      margin-top: .5rem;
+    .team-log-btn {
+      border: 5px solid $red-text;
+      background-color: rgba($red-text, .9);
+      border-radius: 10px;
+      height: 8vh;
+      min-height: 2rem;
+      margin-top: -1rem;
+      width: 35vw;
+      min-width: 20rem;
+      font-family: $title-font;
+      color: rgba($text-color, .8);
+      cursor: pointer;
+
+      &:hover,
+      &:active {
+        background-color: rgba($red-text, 1);
+        border-color: rgba($red-text, 1);
+        transition: background-color 0.1s ease-in, border-color 0.3s ease-in;
+      }
+
+      h5 {
+        float: left;
+        font-size: 5vh;
+        margin-left: 1rem;
+        margin-top: .5rem;
+      }
+
+      p {
+        float: right;
+        font-size: 7vh;
+        margin-top: 0;
+        margin-right: 2vw;
+      }
     }
 
-    p {
-      float: right;
-      font-size: 7vh;
-      margin-top: 0;
-      margin-right: 2vw;
+    ul {
+      background-color: rgba($red-text, .5);
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      display: none;
+      height: 55vh;
+      margin: auto;
+      margin-top: -3rem;
+      width: 30vw;
+      min-width: 15rem;
+
+      li {
+        list-style: none;
+        font-size: 1.5rem;
+        padding-top: 5vh;
+        padding-left: 0;
+        margin-left: -2rem;
+
+        &:before {
+          content: '';
+          display: inline-block;
+          height: 30px;
+          width: 30px;
+          margin-right: 1rem;
+          background-image: url('./img/controller.png');
+        }
+      }
     }
   }
 }
