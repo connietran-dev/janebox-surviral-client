@@ -1,5 +1,7 @@
 $text-color: #efefef;
 $red-text: #5b2a2a;
+$gray-fill: #121212;
+$med-gray-fill: #262626;
 $title-font: 'Bangers', cursive;
 $base-font: 'Montserrat', sans-serif;
 $basic-shadow: 1px 2px 1px black;
@@ -74,8 +76,105 @@ body {
   }
 }
 
+// SetPlayer Component
 .Set-Player {
   .input-field {
     width: 15rem;
+  }
+}
+
+// PlayGame Component
+.Play-Game {
+  main {
+    background-color: rgba($gray-fill, 0.95);
+    border: 1px solid $text-color;
+    border-radius: 15px;
+    box-shadow: $basic-shadow;
+    display: inline-block;
+    margin: 5vh auto 0;
+    height: 90vh;
+    width: 95vw;
+    position: relative;
+  }
+  // 'X' out button (ie. to game-over nav)
+  .admin-button {
+    background-color: rgba($gray-fill, 0.85);
+    position: absolute;
+    left: .5rem;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .game-content {
+    height: 60vh;
+    margin-top: 2vh;
+    width: 95vw;
+  }
+
+  .player-profile {
+    background-color: rgba($med-gray-fill, .9);
+    border: 1px solid $med-gray-fill;
+    border-radius: 15px;
+    bottom: 0;
+    height: 9rem;
+    position: absolute;
+    padding-bottom: 2vh;
+    width: 94.75vw;
+
+    img {
+      border: 10px solid $red-text;
+      background-color: rgba($red-text, .7);
+      border-radius: 50%;
+      height: 12vw;
+      min-height: 11rem;
+      float: left;
+      margin-left: 1.5rem;
+      margin-top: -5.5rem;
+      width: 12vw;
+      min-width: 11rem;
+    }
+
+    .char-descrip {
+      float: left;
+      text-align: left;
+      h3 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: -3rem 0 0 1rem;
+      }
+      p {
+        float: left;
+        width: 25rem;
+        margin: 0 0 0 1rem;
+      }
+    }
+  }
+
+  .team-log {
+    border: 5px solid $red-text;
+    background-color: rgba($red-text, .9);
+    border-radius: 10px;
+    height: 9vh;
+    min-height: 2rem;
+    float: right;
+    margin-top: -1rem;
+    width: 35vw;
+    min-width: 20rem;
+    font-family: $title-font;
+    color: rgba($text-color, .8);
+
+    h5 {
+      float: left;
+      font-size: 5vh;
+      margin-left: 1rem;
+      margin-top: .5rem;
+    }
+
+    p {
+      float: right;
+      font-size: 7vh;
+      margin-top: 0;
+      margin-right: 2vw;
+    }
   }
 }

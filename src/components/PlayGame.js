@@ -3,11 +3,25 @@ import { Link } from 'react-router-dom'
 
 export default function PlayGame() {
   return (
-    <>
-      <h1>Play Game Page</h1>
+    <section className="Play-Game">
       <Link to="/game-over">
-        <button className="admin-button">All done!</button>
+        <button className="admin-button">X</button>
       </Link>
-    </>
+      <main>
+      <button className="team-log">
+        <h5>Team Log</h5>
+        <p>+</p>
+      </button>
+      <section className="game-content"></section>
+      <section className="player-profile">
+        <img src="" alt="" />
+        <section className="char-descrip">
+          <h3>The Engineer</h3>
+          <p>You’ll be responsible for rebuilding a whole new world…
+          Sounds like a lot of work.</p>
+        </section>
+      </section>
+      </main>
+    </section>
   )
 }
