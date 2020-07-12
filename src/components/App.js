@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react'
-import socketIOClient from "socket.io-client"
+import React from 'react'
 
 import { Route, Switch } from 'react-router-dom'
 
@@ -8,18 +7,7 @@ import SetPlayer from './SetPlayer'
 import PlayGame from './PlayGame'
 import GameOver from './GameOver'
 
-const ENDPOINT = 'http://127.0.0.1:8080'
-
 function App() {
-  const [response, setResponse] = useState("");
-
-  useEffect(() => {
-    const socket = socketIOClient(ENDPOINT);
-    socket.on("FromAPI", data => {
-      setResponse(data);
-    });
-  }, []);
-
   return (
     <>
       <Switch>

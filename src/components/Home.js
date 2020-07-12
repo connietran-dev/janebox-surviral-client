@@ -1,9 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { subscribeToTimer } from '../api'
 
-export default function Home() {
-  return (
-    <section className="Home">
+
+class Home extends React.Component {
+  state = {
+    timestamp: ''
+  }
+
+  constructor(props) {
+    super(props)
+    subscribeToTimer((err, timestamp) => this.setState({
+      timestamp
+    }))
+  }
+
+  render() {
+    return (
+      <section className="Home">
       <h1>S u r <span>V i r a l</span></h1>
       <p>Your university's abandoned you..<br /> a virus is on the loose..<br /> and your
       friends are all you have</p>
@@ -19,7 +33,13 @@ export default function Home() {
             <input className="admin-button" type="submit" value="Join Game"/>
           </Link>
         </form>
+        <div>
+          <p>{this.state.timestamp}</p>
+        </div>
       </section>
     </section>
-  )
+    );
+  }
 }
+
+export default Home
