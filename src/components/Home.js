@@ -17,7 +17,7 @@ function Home() {
       <p><em>Do you have what it takes to make it
       out alive?</em></p>
       <section className="menu">
-        <Link className="menu-opt" to={`/set-player?game=${game}`}>
+        <Link className="menu-opt" to={`/set-player?game=${game}/host/`}>
           <button className="admin-button">New Game</button>
         </Link>
         <form className="menu-opt">
@@ -29,8 +29,7 @@ function Home() {
           />
           <Link
             onClick={event => (!game) ? event.preventDefault() : null}
-            to={`/set-player?game=${game}`}
-          >
+            to={`/set-player?game=${game}`}>
             <input
               className="admin-button"
               type="submit"
