@@ -1,5 +1,6 @@
 $text-color: #efefef;
 $red-text: #5b2a2a;
+$gray-fill: #121212;
 $title-font: 'Bangers', cursive;
 $base-font: 'Montserrat', sans-serif;
 $basic-shadow: 1px 2px 1px black;
@@ -74,8 +75,31 @@ body {
   }
 }
 
+// SetPlayer Component
 .Set-Player {
   .input-field {
     width: 15rem;
+  }
+}
+
+// PlayGame Component
+.Play-Game {
+  main {
+    background-color: rgba($gray-fill, 0.95);
+    border: 1px solid $text-color;
+    border-radius: 15px;
+    box-shadow: $basic-shadow;
+    display: inline-block;
+    margin: 5vh auto 0;
+    height: 90vh;
+    width: 95vw;
+  }
+  // 'X' out button (ie. to game-over nav)
+  .admin-button {
+    background-color: rgba($gray-fill, 0.85);
+    position: absolute;
+    left: .5rem;
+    height: 2rem;
+    width: 2rem;
   }
 }
