@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 
 export default function SetPlayer() {
   return (
-    <>
+    <section className="Set-Player">
       <h1>Set Player Page</h1>
       <form>
-        <input type="text" />
+        <input className="input-field" type="text" />
         <Link to="/play">
-          <button>I'm Ready!</button>
+          <button className="admin-button">I'm Ready!</button>
         </Link>
       </form>
-    </>
+    </section>
   )
 }

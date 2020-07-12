@@ -6,7 +6,7 @@ export default function GameOver() {
     <>
       <h1>Game Over Page</h1>
       <Link to="/">
-        <button>Play again!</button>
+        <button className="admin-button">Play again!</button>
       </Link>
     </>
   )
