@@ -1,14 +1,17 @@
 import React from 'react'
 import queryString from 'query-string'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import io from 'socket.io-client'
+
+import PlayerList from './PlayerList'
 
 let socket;
 
 function SetPlayer({ location }) {
   const [name, setName] = useState('')
   const [game, setGame] = useState('')
+  const [users, setUsers] = useState('')
   const ENDPOINT = 'localhost:5000'
 
   // Socket emitter for joining game
@@ -19,9 +22,10 @@ function SetPlayer({ location }) {
     } else {
       setName(event.target.value)
 
-      const { game } = queryString.parse(location.search)
+      const game = location.search.substring(6)
+      console.log("location.search", game)
       setGame(game)
-      
+
       console.log("name", name, "game", game)
       socket = io(ENDPOINT)
 
@@ -41,6 +45,14 @@ function SetPlayer({ location }) {
 
   }
 
+  useEffect(() => {
+    socket = io(ENDPOINT)
+    socket.on('roomData', ({ users }) => {
+      console.log(users)
+      setUsers(users)
+    });
+  }, []);
+
   return (
     <section className="Set-Player">
       <h1>Set Player Page</h1>
@@ -58,9 +70,7 @@ function SetPlayer({ location }) {
           <button className="admin-button">I'm Ready!</button>
         </Link>
       </form>
-      <div className="Message-Container">
-        <h2>Current Game: {game}</h2>
-      </div>
+      <PlayerList users={users} />
     </section>
   )
 
