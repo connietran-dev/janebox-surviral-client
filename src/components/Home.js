@@ -16,9 +16,21 @@ function Home() {
           <button className="admin-button">New Game</button>
         </Link>
         <form className="menu-opt">
-          <input className="input-field" type="text" onChange={(event) => setGame(event.target.value)} />
-          <Link onClick={e => (!game) ? e.preventDefault() : null} to={`/set-player?game=${game}`}>
-            <input className="admin-button" type="submit" value="Join Game"/>
+          {/* If game is blank, preventDefault */}
+          <input
+            className="input-field"
+            type="text"
+            placeholder="Join Game"
+            onChange={(event) => setGame(event.target.value)}
+          />
+          <Link
+            onClick={event => (!game) ? event.preventDefault() : null}
+            to={`/set-player?game=${game}`}
+          >
+            <input
+              className="admin-button"
+              type="submit"
+              value="Join Game" />
           </Link>
         </form>
       </section>
