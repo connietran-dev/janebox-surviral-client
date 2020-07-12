@@ -1,8 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 function Home() {
   const [game, setGame] = useState('')
+
+  useEffect(() => {
+    const str = Math.random().toString(36).substring(2, 6).toUpperCase()
+    setGame(str)
+  }, [])
 
   return (
     <section className="Home">
@@ -12,7 +17,7 @@ function Home() {
       <p><em>Do you have what it takes to make it
       out alive?</em></p>
       <section className="menu">
-        <Link className="menu-opt" to="/set-player">
+        <Link className="menu-opt" to={`/set-player?game=${game}`}>
           <button className="admin-button">New Game</button>
         </Link>
         <form className="menu-opt">
@@ -20,7 +25,6 @@ function Home() {
           <input
             className="input-field"
             type="text"
-            placeholder="Join Game"
             onChange={(event) => setGame(event.target.value)}
           />
           <Link
