@@ -2,7 +2,7 @@ $text-color: #efefef;
 $red-text: #5b2a2a;
 $gray-fill: #121212;
 $med-gray-fill: #262626;
-$title-font: 'Bangers', cursive;
+$title-font: 'Bangers', Verdana;
 $base-font: 'Montserrat', sans-serif;
 $basic-shadow: 1px 2px 1px black;
 
@@ -122,8 +122,13 @@ body {
     width: 94.75vw;
 
     img {
-      border: 10px solid $red-text;
-      background-color: rgba($red-text, .7);
+      // border: 10px solid $red-text;
+      background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, .2)
+        ), url('./img/humans/engineer.png') no-repeat center center scroll;
+      background-size: contain;
       border-radius: 50%;
       height: 12vw;
       min-height: 11rem;
@@ -140,6 +145,7 @@ body {
       h3 {
         font-size: 2.5rem;
         font-weight: bold;
+        text-shadow: $basic-shadow;
         margin: -3rem 0 0 1rem;
       }
       p {
@@ -151,30 +157,96 @@ body {
   }
 
   .team-log {
-    border: 5px solid $red-text;
-    background-color: rgba($red-text, .9);
-    border-radius: 10px;
-    height: 9vh;
-    min-height: 2rem;
     float: right;
-    margin-top: -1rem;
-    width: 35vw;
-    min-width: 20rem;
+
+    .team-log-btn {
+      border: 5px solid $red-text;
+      background-color: rgba($red-text, .9);
+      border-radius: 10px;
+      height: 8vh;
+      min-height: 2rem;
+      margin-top: -1rem;
+      width: 35vw;
+      min-width: 20rem;
+      font-family: $title-font;
+      color: rgba($text-color, .8);
+      cursor: pointer;
+
+      &:hover,
+      &:active {
+        background-color: rgba($red-text, 1);
+        border-color: rgba($red-text, 1);
+        transition: background-color 0.1s ease-in, border-color 0.3s ease-in;
+      }
+
+      h5 {
+        float: left;
+        font-size: 5vh;
+        margin-left: 1rem;
+        margin-top: .5rem;
+      }
+
+      p {
+        float: right;
+        font-size: 7vh;
+        margin-top: 0;
+        margin-right: 2vw;
+      }
+    }
+
+    ul {
+      background-color: rgba($red-text, .5);
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      display: none;
+      height: 55vh;
+      margin: auto;
+      margin-top: -3rem;
+      width: 30vw;
+      min-width: 15rem;
+
+      li {
+        list-style: none;
+        font-size: 1.5rem;
+        padding-top: 5vh;
+        padding-left: 0;
+        margin-left: -2rem;
+
+        &:before {
+          content: '';
+          display: inline-block;
+          height: 30px;
+          width: 30px;
+          margin-right: 1rem;
+          background-image: url('./img/controller.png');
+        }
+      }
+    }
+  }
+}
+
+.Game-Over {
+  h1 {
     font-family: $title-font;
-    color: rgba($text-color, .8);
+    font-size: 5rem;
+    text-shadow: $basic-shadow;
+    margin-bottom: 0;
+  }
 
-    h5 {
-      float: left;
-      font-size: 5vh;
-      margin-left: 1rem;
-      margin-top: .5rem;
-    }
+  .end-msg {
+    background-color: rgba($gray-fill, 0.95);
+    border: 2px solid $text-color;
+    border-radius: 15px;
+    box-shadow: $basic-shadow;
+    margin: 5vh auto;
+    font-size: 3.5rem;
+    padding: 5rem 1rem;
+    // height: 50vh;
+    width: 50vw;
+  }
 
-    p {
-      float: right;
-      font-size: 7vh;
-      margin-top: 0;
-      margin-right: 2vw;
-    }
+  .admin-button {
+    height: 6rem;
+    width: 10rem;
   }
 }
