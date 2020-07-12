@@ -228,5 +228,25 @@ body {
 .Game-Over {
   h1 {
     font-family: $title-font;
+    font-size: 5rem;
+    text-shadow: $basic-shadow;
+    margin-bottom: 0;
+  }
+
+  .end-msg {
+    background-color: rgba($gray-fill, 0.95);
+    border: 2px solid $text-color;
+    border-radius: 15px;
+    box-shadow: $basic-shadow;
+    margin: 5vh auto;
+    font-size: 3.5rem;
+    padding: 5rem 1rem;
+    // height: 50vh;
+    width: 50vw;
+  }
+
+  .admin-button {
+    height: 6rem;
+    width: 10rem;
   }
 }
