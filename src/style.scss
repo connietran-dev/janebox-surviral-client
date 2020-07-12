@@ -105,6 +105,12 @@ body {
     width: 2rem;
   }
 
+  .game-content {
+    height: 60vh;
+    margin-top: 2vh;
+    width: 95vw;
+  }
+
   .player-profile {
     background-color: rgba($med-gray-fill, .9);
     border: 1px solid $med-gray-fill;
@@ -112,11 +118,12 @@ body {
     bottom: 0;
     height: 9rem;
     position: absolute;
+    padding-bottom: 2vh;
     width: 94.75vw;
 
     img {
-      border: 1px solid $red-text;
-      background-color: $red-text;
+      border: 10px solid $red-text;
+      background-color: rgba($red-text, .7);
       border-radius: 50%;
       height: 12vw;
       min-height: 11rem;
@@ -126,6 +133,7 @@ body {
       width: 12vw;
       min-width: 11rem;
     }
+
     .char-descrip {
       float: left;
       text-align: left;
@@ -139,6 +147,34 @@ body {
         width: 25rem;
         margin: 0 0 0 1rem;
       }
+    }
+  }
+
+  .team-log {
+    border: 5px solid $red-text;
+    background-color: rgba($red-text, .9);
+    border-radius: 10px;
+    height: 8vh;
+    min-height: 2rem;
+    float: right;
+    margin-top: -1rem;
+    width: 35vw;
+    min-width: 20rem;
+    font-family: $title-font;
+    color: rgba($text-color, .8);
+
+    h5 {
+      float: left;
+      font-size: 5vh;
+      margin-left: 1rem;
+      margin-top: .5rem;
+    }
+
+    p {
+      float: right;
+      font-size: 7vh;
+      margin-top: 0;
+      margin-right: 2vw;
     }
   }
 }
