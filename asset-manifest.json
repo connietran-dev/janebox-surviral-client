@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/janebox-surviral-client/static/css/main.743394bd.chunk.css",
-    "main.js": "/janebox-surviral-client/static/js/main.614f9878.chunk.js",
-    "main.js.map": "/janebox-surviral-client/static/js/main.614f9878.chunk.js.map",
+    "main.css": "/janebox-surviral-client/static/css/main.89cb014d.chunk.css",
+    "main.js": "/janebox-surviral-client/static/js/main.90772686.chunk.js",
+    "main.js.map": "/janebox-surviral-client/static/js/main.90772686.chunk.js.map",
     "runtime-main.js": "/janebox-surviral-client/static/js/runtime-main.deea5962.js",
     "runtime-main.js.map": "/janebox-surviral-client/static/js/runtime-main.deea5962.js.map",
-    "static/js/2.46568205.chunk.js": "/janebox-surviral-client/static/js/2.46568205.chunk.js",
-    "static/js/2.46568205.chunk.js.map": "/janebox-surviral-client/static/js/2.46568205.chunk.js.map",
+    "static/js/2.1ba30f97.chunk.js": "/janebox-surviral-client/static/js/2.1ba30f97.chunk.js",
+    "static/js/2.1ba30f97.chunk.js.map": "/janebox-surviral-client/static/js/2.1ba30f97.chunk.js.map",
     "index.html": "/janebox-surviral-client/index.html",
-    "precache-manifest.771ed0b604e0818b173ca04e4a8f5772.js": "/janebox-surviral-client/precache-manifest.771ed0b604e0818b173ca04e4a8f5772.js",
+    "precache-manifest.4d18f8a1c936e0380211a45b306fa622.js": "/janebox-surviral-client/precache-manifest.4d18f8a1c936e0380211a45b306fa622.js",
     "service-worker.js": "/janebox-surviral-client/service-worker.js",
-    "static/css/main.743394bd.chunk.css.map": "/janebox-surviral-client/static/css/main.743394bd.chunk.css.map",
-    "static/js/2.46568205.chunk.js.LICENSE.txt": "/janebox-surviral-client/static/js/2.46568205.chunk.js.LICENSE.txt",
-    "static/media/style.scss": "/janebox-surviral-client/static/media/abandoned-railway.9895522f.jpg"
+    "static/css/main.89cb014d.chunk.css.map": "/janebox-surviral-client/static/css/main.89cb014d.chunk.css.map",
+    "static/js/2.1ba30f97.chunk.js.LICENSE.txt": "/janebox-surviral-client/static/js/2.1ba30f97.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/janebox-surviral-client/static/media/engineer.55729ca6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.deea5962.js",
-    "static/js/2.46568205.chunk.js",
-    "static/css/main.743394bd.chunk.css",
-    "static/js/main.614f9878.chunk.js"
+    "static/js/2.1ba30f97.chunk.js",
+    "static/css/main.89cb014d.chunk.css",
+    "static/js/main.90772686.chunk.js"
   ]
 }
