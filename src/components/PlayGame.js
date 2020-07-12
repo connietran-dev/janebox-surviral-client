@@ -8,10 +8,10 @@ export default function PlayGame() {
         <button className="admin-button">X</button>
       </Link>
       <main>
-      <section className="team-log">
+      <button className="team-log">
         <h5>Team Log</h5>
         <p>+</p>
-      </section>
+      </button>
       <section className="game-content"></section>
       <section className="player-profile">
         <img src="" alt="" />
