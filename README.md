@@ -17,9 +17,9 @@ This is the client-side repo
 * [ReactJS](https://es.reactjs.org/)
   - [Create React App](https://github.com/facebook/create-react-app)
 * [React Router](https://reactrouter.com/web/guides/quick-start)
-* [React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction/)
 * [node-sass](https://www.npmjs.com/package/node-sass)
 * [Socket.IO Client](https://socket.io/docs/client-api/)
+* [gh-pages](https://www.npmjs.com/package/gh-pages)
 
 ### Relevant Scripts
 * `npm start` (runs dev mode @:3000)
