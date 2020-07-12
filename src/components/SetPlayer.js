@@ -1,6 +1,6 @@
 import React from 'react'
-import queryString from 'query-string'
-import { Link } from 'react-router-dom'
+// import queryString from 'query-string'
+import { Link, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import io from 'socket.io-client'
 
@@ -22,11 +22,10 @@ function SetPlayer({ location }) {
     } else {
       setName(event.target.value)
 
-      const game = location.search.substring(6)
-      console.log("location.search", game)
+      const game = location.search.substring(6, 10)
       setGame(game)
-
-      console.log("name", name, "game", game)
+      console.log('name: ', name, 'game: ', game)
+      console.log('users: ', users)
       socket = io(ENDPOINT)
 
       // Pass callback to execute after socket.emit
@@ -46,12 +45,13 @@ function SetPlayer({ location }) {
   }
 
   useEffect(() => {
+    console.log(location.search.substring(10))
     socket = io(ENDPOINT)
     socket.on('roomData', ({ users }) => {
       console.log(users)
       setUsers(users)
     });
-  }, []);
+  }, [location]);
 
   return (
     <section className="Set-Player">
@@ -71,6 +71,11 @@ function SetPlayer({ location }) {
         </Link>
       </form>
       <PlayerList users={users} />
+      {
+        (location.search.substring(10))
+        ? <button className="admin-button">We're ready!</button>
+        : <></>
+      }
     </section>
   )
 
