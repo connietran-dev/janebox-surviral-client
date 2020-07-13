@@ -77,12 +77,9 @@ function SetPlayer({ location }) {
       </form>
       <p id="msg-txt" className="msg-txt">{msg}</p>
       <PlayerList users={users} />
-      {
-        (location.search.substring(10))
-        ? <Link to={`/play?game=${game}&name=${name}`}>
-            <button id="all-ready" className="admin-button">We're ready!</button>
-          </Link>
-        : <></>
+      <Link to={`/play?game=${game}&name=${name}`}>
+        <button id="all-ready" className="admin-button">We're ready!</button>
+      </Link>
       }
     </section>
   )
