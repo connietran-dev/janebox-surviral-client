@@ -4,12 +4,12 @@ import io from 'socket.io-client'
 
 import TeamLog from './TeamLog'
 import Email from './Email'
+import GameContent from './GameContent'
 
 let socket;
 
 export default function PlayGame({ location }) {
   const [users, setUsers] = useState([])
-  // const [game, setGame] = useState('')
   const [title, setTitle] = useState('')
   const [descrip, setDescrip] = useState('')
   const ENDPOINT = 'localhost:5000'
@@ -71,7 +71,7 @@ export default function PlayGame({ location }) {
       </Link>
       <main>
         <TeamLog users={users} />
-        <section className="game-content"></section>
+        <GameContent />
         <form id="char-choice" onSubmit={chooseMajor} className="char-choice">
           <p>Not the semester you imagined... but you still gotta study.
            <br/><span>What's your major?</span></p>
