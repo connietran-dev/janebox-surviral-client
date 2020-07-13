@@ -10,9 +10,9 @@ export default function PlayGame() {
         <button className="admin-button">X</button>
       </Link>
       <main>
-      <TeamLog />
-      <section className="game-content"></section>
-      <PlayerProfile />
+        <TeamLog />
+        <section className="game-content"></section>
+        <PlayerProfile />
       </main>
     </section>
   )
