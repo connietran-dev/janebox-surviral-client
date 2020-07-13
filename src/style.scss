@@ -94,6 +94,13 @@ body {
     .input-field {
       width: 15rem;
     }
+
+    .err-msg {
+      background-color: rgba($gray-fill, 0.3);
+      color: red;
+      margin: 5px auto;
+      width: 30vw;
+    }
   }
 
   .gameid-mark {

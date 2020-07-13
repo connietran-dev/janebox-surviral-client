@@ -12,13 +12,17 @@ function SetPlayer({ location }) {
   const [game, setGame] = useState('')
   const [users, setUsers] = useState([])
   const [msg, setMsg] = useState('')
+  const [err, setErr] = useState('')
   const ENDPOINT = 'localhost:5000'
 
   // Socket emitter for joining game
   // location.search uses query-string to return query parameters from URL
   function joinUsertoGame(event) {
     event.preventDefault()
-    if (name) {
+    if (users.length === 5) {
+      setErr('Sorry! Only 5 can play, better luck next time!')
+    } else if (name) {
+      setErr('')
       document.getElementById('username-form').style.display = 'none'
       document.getElementById('msg-txt').style.display = 'block'
       setName(event.target.value)
@@ -32,7 +36,8 @@ function SetPlayer({ location }) {
 
         socket.off()
       }
-
+    } else {
+      setErr('Please enter a name (any name! be creative!)')
     }
 
   }
@@ -68,6 +73,7 @@ function SetPlayer({ location }) {
           onChange={(event) => setName(event.target.value)}
         />
         <button onClick={joinUsertoGame} className="admin-button" type="submit">I'm Ready!</button>
+        <p className='err-msg'>{err}</p>
       </form>
       <p id="msg-txt" className="msg-txt">{msg}</p>
       <PlayerList users={users} />
