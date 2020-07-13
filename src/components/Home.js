@@ -37,7 +37,7 @@ function Home() {
           </Link>
         </form>
       </section>
-      <Link to="/about">About This Project</Link>
+      <Link className="about-link" to="/about">About This Project</Link>
     </section>
   )
 }

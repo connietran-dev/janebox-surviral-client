@@ -146,6 +146,17 @@ body {
     display: inline-block;
     margin: .5rem;
   }
+
+  .menu {
+    margin-bottom: .5rem;
+  }
+
+  .about-link {
+    color: $text-color;
+    font-weight: bold;
+    text-shadow: $basic-shadow;
+    font-size: .85rem;
+  }
 }
 
 // SetPlayer Component
