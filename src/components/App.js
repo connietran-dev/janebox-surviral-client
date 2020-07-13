@@ -6,6 +6,7 @@ import Home from './Home'
 import SetPlayer from './SetPlayer'
 import PlayGame from './PlayGame'
 import GameOver from './GameOver'
+import About from './About'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route component={SetPlayer} path="/set-player" />
         <Route component={PlayGame} path="/play" />
         <Route component={GameOver} path="/game-over" />
+        <Route component={About} path="/about" />
       </Switch>
     </>
   )
