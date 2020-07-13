@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/janebox-surviral-client/static/css/main.89cb014d.chunk.css",
-    "main.js": "/janebox-surviral-client/static/js/main.6ce3df61.chunk.js",
-    "main.js.map": "/janebox-surviral-client/static/js/main.6ce3df61.chunk.js.map",
+    "main.css": "/janebox-surviral-client/static/css/main.b2463285.chunk.css",
+    "main.js": "/janebox-surviral-client/static/js/main.6c238fc5.chunk.js",
+    "main.js.map": "/janebox-surviral-client/static/js/main.6c238fc5.chunk.js.map",
     "runtime-main.js": "/janebox-surviral-client/static/js/runtime-main.deea5962.js",
     "runtime-main.js.map": "/janebox-surviral-client/static/js/runtime-main.deea5962.js.map",
-    "static/js/2.0dc6e673.chunk.js": "/janebox-surviral-client/static/js/2.0dc6e673.chunk.js",
-    "static/js/2.0dc6e673.chunk.js.map": "/janebox-surviral-client/static/js/2.0dc6e673.chunk.js.map",
+    "static/js/2.12b99d19.chunk.js": "/janebox-surviral-client/static/js/2.12b99d19.chunk.js",
+    "static/js/2.12b99d19.chunk.js.map": "/janebox-surviral-client/static/js/2.12b99d19.chunk.js.map",
     "index.html": "/janebox-surviral-client/index.html",
-    "precache-manifest.10e9bf3d82b3160505091aaa5c2f9ac4.js": "/janebox-surviral-client/precache-manifest.10e9bf3d82b3160505091aaa5c2f9ac4.js",
+    "precache-manifest.b87431256262f0febe4cee9218f8ca29.js": "/janebox-surviral-client/precache-manifest.b87431256262f0febe4cee9218f8ca29.js",
     "service-worker.js": "/janebox-surviral-client/service-worker.js",
-    "static/css/main.89cb014d.chunk.css.map": "/janebox-surviral-client/static/css/main.89cb014d.chunk.css.map",
-    "static/js/2.0dc6e673.chunk.js.LICENSE.txt": "/janebox-surviral-client/static/js/2.0dc6e673.chunk.js.LICENSE.txt",
-    "static/media/style.scss": "/janebox-surviral-client/static/media/engineer.55729ca6.png"
+    "static/css/main.b2463285.chunk.css.map": "/janebox-surviral-client/static/css/main.b2463285.chunk.css.map",
+    "static/js/2.12b99d19.chunk.js.LICENSE.txt": "/janebox-surviral-client/static/js/2.12b99d19.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/janebox-surviral-client/static/media/polisci.558e0bba.png"
   },
   "entrypoints": [
     "static/js/runtime-main.deea5962.js",
-    "static/js/2.0dc6e673.chunk.js",
-    "static/css/main.89cb014d.chunk.css",
-    "static/js/main.6ce3df61.chunk.js"
+    "static/js/2.12b99d19.chunk.js",
+    "static/css/main.b2463285.chunk.css",
+    "static/js/main.6c238fc5.chunk.js"
   ]
 }
