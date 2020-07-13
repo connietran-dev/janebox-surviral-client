@@ -79,7 +79,7 @@ function SetPlayer({ location }) {
       <PlayerList users={users} />
       {
         (location.search.substring(10))
-        ? <Link to={`/set-player?game=${game}&name=${name}`}>
+        ? <Link to={`/play?game=${game}&name=${name}`}>
             <button id="all-ready" className="admin-button">We're ready!</button>
           </Link>
         : <></>
