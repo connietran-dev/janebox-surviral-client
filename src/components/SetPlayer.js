@@ -20,7 +20,7 @@ function SetPlayer({ location }) {
     event.preventDefault()
     if (name) {
       document.getElementById('username-form').style.display = 'none'
-
+      document.getElementById('msg-txt').style.display = 'block'
       setName(event.target.value)
 
       // Pass callback to execute after socket.emit
@@ -60,7 +60,7 @@ function SetPlayer({ location }) {
         : <></>
       }
       <form id="username-form">
-        <h1>C h o o s e<span>Y o u r</span><span>C h a r a c t e r</span></h1>
+        <h1>C h o o s e<span>Y o u r</span><br />C h a r a c t e r</h1>
         <input
           className="input-field"
           type="text"
@@ -69,12 +69,12 @@ function SetPlayer({ location }) {
         />
         <button onClick={joinUsertoGame} className="admin-button" type="submit">I'm Ready!</button>
       </form>
-      <p className="msg-txt">{msg}</p>
+      <p id="msg-txt" className="msg-txt">{msg}</p>
       <PlayerList users={users} />
       {
         (location.search.substring(10))
         ? <Link to={`/set-player?game=${game}&name=${name}`}>
-            <button className="admin-button">We're ready!</button>
+            <button id="all-ready" className="admin-button">We're ready!</button>
           </Link>
         : <></>
       }

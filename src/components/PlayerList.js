@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PlayerList = ({ users }) => (
-    <section className="textContainer">
+    <section className="Player-List">
         { users.length > 0
           ? (<div>
               <h3>Players in your party:</h3>
