@@ -1,16 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import TeamLog from './TeamLog'
 
 export default function PlayGame() {
 
-  function toggleTeamLog() {
-    var x = document.getElementById('players-ul')
-    if (x.style.display === "none") {
-      x.style.display = "inline-block";
-    } else {
-      x.style.display = "none";
-    }
-  }
+  // function toggleTeamLog() {
+  //   var x = document.getElementById('players-ul')
+  //   if (x.style.display === "none") {
+  //     x.style.display = "inline-block";
+  //   } else {
+  //     x.style.display = "none";
+  //   }
+  // }
 
   return (
     <section className="Play-Game">
@@ -18,17 +19,7 @@ export default function PlayGame() {
         <button className="admin-button">X</button>
       </Link>
       <main>
-      <section className="team-log">
-        <div className="team-log-btn" onClick={toggleTeamLog}>
-          <h5>Team Log</h5>
-          <p>+</p>
-        </div>
-        <ul id="players-ul">
-          <li>Connie: 40pts</li>
-          <li>Sam: 27pts</li>
-          <li>Nick: 34pts</li>
-        </ul>
-      </section>
+      <TeamLog />
       <section className="game-content"></section>
       <section className="player-profile">
         <img src="" alt="" />
