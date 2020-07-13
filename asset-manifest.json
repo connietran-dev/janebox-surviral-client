@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/janebox-surviral-client/static/css/main.e8609375.chunk.css",
-    "main.js": "/janebox-surviral-client/static/js/main.c196e157.chunk.js",
-    "main.js.map": "/janebox-surviral-client/static/js/main.c196e157.chunk.js.map",
+    "main.css": "/janebox-surviral-client/static/css/main.8477c256.chunk.css",
+    "main.js": "/janebox-surviral-client/static/js/main.a3b35a6c.chunk.js",
+    "main.js.map": "/janebox-surviral-client/static/js/main.a3b35a6c.chunk.js.map",
     "runtime-main.js": "/janebox-surviral-client/static/js/runtime-main.deea5962.js",
     "runtime-main.js.map": "/janebox-surviral-client/static/js/runtime-main.deea5962.js.map",
     "static/js/2.70de00f3.chunk.js": "/janebox-surviral-client/static/js/2.70de00f3.chunk.js",
     "static/js/2.70de00f3.chunk.js.map": "/janebox-surviral-client/static/js/2.70de00f3.chunk.js.map",
     "index.html": "/janebox-surviral-client/index.html",
-    "precache-manifest.b454fb25536d74565efb0b82c0e207e0.js": "/janebox-surviral-client/precache-manifest.b454fb25536d74565efb0b82c0e207e0.js",
+    "precache-manifest.65c61803c897547c0ac5f35b9754b528.js": "/janebox-surviral-client/precache-manifest.65c61803c897547c0ac5f35b9754b528.js",
     "service-worker.js": "/janebox-surviral-client/service-worker.js",
-    "static/css/main.e8609375.chunk.css.map": "/janebox-surviral-client/static/css/main.e8609375.chunk.css.map",
+    "static/css/main.8477c256.chunk.css.map": "/janebox-surviral-client/static/css/main.8477c256.chunk.css.map",
     "static/js/2.70de00f3.chunk.js.LICENSE.txt": "/janebox-surviral-client/static/js/2.70de00f3.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/janebox-surviral-client/static/media/polisci.558e0bba.png"
   },
   "entrypoints": [
     "static/js/runtime-main.deea5962.js",
     "static/js/2.70de00f3.chunk.js",
-    "static/css/main.e8609375.chunk.css",
-    "static/js/main.c196e157.chunk.js"
+    "static/css/main.8477c256.chunk.css",
+    "static/js/main.a3b35a6c.chunk.js"
   ]
 }
