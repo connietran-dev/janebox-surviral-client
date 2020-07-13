@@ -35,6 +35,7 @@ University email:
 
 The prototype we have developed represents our minimum viable product. However, Surviral has a host of features that we hope to build as part of our future goals for the game, including:
 
+* Special thanks to Nick Morgan who helped write our storyline. We didn't have time to include all of his witty answer choices, but we highly recommend you check them out in our slides.json file on GitHub [here](https://github.com/connietran-dev/janebox-surviral-client/blob/master/src/slides.json). They are hilarious! We hope to incorporate all this great writing in the very near future.
 * Having unique goals for each character based on the role the player selects at the beginning of the game
 * Creating collaborative decisions on which the team must agree
 * Having variable storylines and variable outcomes
