@@ -1,12 +1,18 @@
-import React, { useState }  from 'react'
+import React, { useState, useEffect }  from 'react'
 import { Link } from 'react-router-dom'
+import io from 'socket.io-client'
+
 import TeamLog from './TeamLog'
-// import PlayerProfile from './PlayerProfile'
 import Email from './Email'
 
-export default function PlayGame() {
+let socket;
+
+export default function PlayGame({ location }) {
+  const [users, setUsers] = useState([])
+  // const [game, setGame] = useState('')
   const [title, setTitle] = useState('')
   const [descrip, setDescrip] = useState('')
+  const ENDPOINT = 'localhost:5000'
 
   function chooseMajor(event) {
     event.preventDefault()
@@ -45,6 +51,18 @@ export default function PlayGame() {
     document.getElementById('char-choice').style.display = 'none'
   }
 
+  useEffect(() => {
+    const game = location.search.substring(6, 10)
+    // console.log('game: ', game)
+    // setGame(game)
+
+    socket = io(ENDPOINT)
+
+    socket.on('roomData', ({ users }) => {
+      setUsers(users.filter(user => user.game === game))
+    })
+  }, [location]);
+
   return (
     <section className="Play-Game">
       <Email />
@@ -52,7 +70,7 @@ export default function PlayGame() {
         <button className="admin-button">X</button>
       </Link>
       <main>
-        <TeamLog />
+        <TeamLog users={users} />
         <section className="game-content"></section>
         <form id="char-choice" onSubmit={chooseMajor} className="char-choice">
           <p>Not the semester you imagined... but you still gotta study.

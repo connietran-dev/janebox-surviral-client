@@ -16,11 +16,9 @@ const TeamLog = ({ users }) => {
       <h5>Team Log</h5>
       <p>+</p>
     </div>
-    <ul id="players-ul">
-      <li>Connie: 40pts</li>
-      <li>Sam: 27pts</li>
-      <li>Nick: 34pts</li>
-    </ul>
+    { users.length > 0
+      ? (<ul id="players-ul">{users.map(({ name }) => ( <li key={name} > {name} </li>))}</ul>)
+      : (<div><p>No one's playing?</p></div>)}
   </section>
 )}
 
