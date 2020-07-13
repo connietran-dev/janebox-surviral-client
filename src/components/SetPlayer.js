@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import io from 'socket.io-client'
+import apiUrl from '../apiConfig'
 
 import PlayerList from './PlayerList'
 
@@ -13,7 +14,7 @@ function SetPlayer({ location }) {
   const [users, setUsers] = useState([])
   const [msg, setMsg] = useState('')
   const [err, setErr] = useState('')
-  const ENDPOINT = 'localhost:5000'
+  const ENDPOINT = apiUrl
 
   // Socket emitter for joining game
   // location.search uses query-string to return query parameters from URL

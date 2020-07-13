@@ -2,6 +2,8 @@ import React, { useState, useEffect }  from 'react'
 import { Link } from 'react-router-dom'
 import io from 'socket.io-client'
 
+import apiUrl from '../apiConfig'
+
 import TeamLog from './TeamLog'
 import Email from './Email'
 import GameContent from './GameContent'
@@ -12,7 +14,7 @@ export default function PlayGame({ location }) {
   const [users, setUsers] = useState([])
   const [title, setTitle] = useState('')
   const [descrip, setDescrip] = useState('')
-  const ENDPOINT = 'localhost:5000'
+  const ENDPOINT = apiUrl
 
   function chooseMajor(event) {
     event.preventDefault()
