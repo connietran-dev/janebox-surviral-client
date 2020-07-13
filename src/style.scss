@@ -296,6 +296,29 @@ body {
       }
     }
   }
+
+  .Email {
+    background: url('./img/email-graphic.png') no-repeat center center scroll;
+    background-size: cover;
+    height: 210vh;
+    width: 110vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    text-align: left;
+    margin: auto;
+
+    button {
+      background-color: red;
+      border: 1px solid red;
+      border-radius: 50%;
+      height: 2rem;
+      width: 2rem;
+      margin-left: 1rem;
+      margin-top: .75rem;
+    }
+  }
 }
 
 // GameOver Component
