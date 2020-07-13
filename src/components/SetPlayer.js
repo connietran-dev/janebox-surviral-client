@@ -1,6 +1,5 @@
 import React from 'react'
-// import queryString from 'query-string'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import io from 'socket.io-client'
 
@@ -20,6 +19,8 @@ function SetPlayer({ location }) {
   function joinUsertoGame(event) {
     event.preventDefault()
     if (name) {
+      document.getElementById('username-form').style.display = 'none'
+
       setName(event.target.value)
 
       const game = location.search.substring(6, 10)
@@ -52,7 +53,7 @@ function SetPlayer({ location }) {
   return (
     <section className="Set-Player">
       <h1>Set Player Page</h1>
-      <form>
+      <form id="username-form">
         <input
           className="input-field"
           type="text"
@@ -61,6 +62,7 @@ function SetPlayer({ location }) {
         />
         <button onClick={joinUsertoGame} className="admin-button" type="submit">I'm Ready!</button>
       </form>
+      <p>{msg}</p>
       <PlayerList users={users} />
       {
         (location.search.substring(10))
