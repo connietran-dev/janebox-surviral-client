@@ -1,6 +1,5 @@
 import React from 'react'
-// import queryString from 'query-string'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import io from 'socket.io-client'
 
@@ -11,27 +10,21 @@ let socket;
 function SetPlayer({ location }) {
   const [name, setName] = useState('')
   const [game, setGame] = useState('')
-  const [users, setUsers] = useState('')
+  const [users, setUsers] = useState([])
+  const [msg, setMsg] = useState('')
   const ENDPOINT = 'localhost:5000'
 
   // Socket emitter for joining game
   // location.search uses query-string to return query parameters from URL
   function joinUsertoGame(event) {
-    if (!name) {
-      event.preventDefault()
-    } else {
+    event.preventDefault()
+    if (name) {
+      document.getElementById('username-form').style.display = 'none'
+
       setName(event.target.value)
 
-      const game = location.search.substring(6, 10)
-      setGame(game)
-      console.log('name: ', name, 'game: ', game)
-      console.log('users: ', users)
-      socket = io(ENDPOINT)
-
       // Pass callback to execute after socket.emit
-      socket.emit('join', { name, game }, () => {
-
-      })
+      socket.emit('join', { name, game }, () => {})
 
       // For unmounting of the component when user leaves game, emit disconnect event and turn socket
       return () => {
@@ -45,35 +38,44 @@ function SetPlayer({ location }) {
   }
 
   useEffect(() => {
-    console.log(location.search.substring(10))
+    const game = location.search.substring(6, 10)
+    setGame(game)
+
     socket = io(ENDPOINT)
+
+    socket.on('message', res => {
+      setMsg(res.text)
+    })
+
     socket.on('roomData', ({ users }) => {
-      console.log(users)
       setUsers(users)
-    });
-  }, [location]);
+    })
+  }, [msg, location]);
 
   return (
     <section className="Set-Player">
       <h1>Set Player Page</h1>
-      <form>
+      {
+        (location.search.substring(10))
+        ? <h2>Your Game ID is: {game}</h2>
+        : <></>
+      }
+      <form id="username-form">
         <input
           className="input-field"
           type="text"
           placeholder="Name"
           onChange={(event) => setName(event.target.value)}
         />
-        <Link
-          onClick={joinUsertoGame}
-          to={`/set-player?game=${game}&name=${name}`}
-        >
-          <button className="admin-button">I'm Ready!</button>
-        </Link>
+        <button onClick={joinUsertoGame} className="admin-button" type="submit">I'm Ready!</button>
       </form>
+      <p>{msg}</p>
       <PlayerList users={users} />
       {
         (location.search.substring(10))
-        ? <button className="admin-button">We're ready!</button>
+        ? <Link to={`/set-player?game=${game}&name=${name}`}>
+            <button className="admin-button">We're ready!</button>
+          </Link>
         : <></>
       }
     </section>
