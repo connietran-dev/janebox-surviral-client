@@ -7,6 +7,8 @@ SurViral is a multiplayer, storyline game that allows players to work together a
 
 This is the client-side repo which uses web technologies to create the game (as opposed to game engines like Unity and Unreal Engine). We utilized React, React Router, Sass, and Socket.io to create the client-side functionality.
 
+[Video Walkthrough](https://youtu.be/TzpQsmEzlo0)
+
 ### Project Inspiration
 
 We were inspired by story-centered games, like Life is Strange and the Stranger Things game series, as well as "Choose your own adventure" story/action games, like Pokemon and DnD. We were also inspired by social games like Jackbox Games and wanted collaboration to be an key aspect of the game. While the theme of the game is inspired by real-life events, we also wanted to ensure there was an inspirational and positive goal that all players were working towards.
@@ -24,7 +26,6 @@ Choose your player using socket.io to display players in the party:
 
 Main game play:
 
-![Main game screen](./public/screenshots/playgame.png)
 ![Main game screen](./public/screenshots/playgame2.png)
 
 University email:
@@ -38,7 +39,7 @@ The prototype we have developed represents our minimum viable product. However, 
 * Having unique goals for each character based on the role the player selects at the beginning of the game
 * Creating collaborative decisions on which the team must agree
 * Having variable storylines and variable outcomes
-* Exploring the concept of opposing teams and/or saboteurs (e.g., Secret Hitler, Werewolf) instead of one collaborative team 
+* Exploring the concept of opposing teams and/or saboteurs (e.g., Secret Hitler, Werewolf) instead of one collaborative team
 * Incorporating a competitive aspect and creating minigames & puzzles
 
 
@@ -63,6 +64,6 @@ See [Deploying a create-react-app with routing to GitHub pages](https://levelup.
 ![Surviral wireframes](./public/wireframes.png)
 
 ## Authors
-* **Samantha Sexton**: Full stack web development, React, Sass, socket.io, wireframing - [@srsexton94](https://github.com/srsexton94)
-* **Connie Tran**: Full stack web development, socket.io, Express, Node, React - [@connietran-dev](https://github.com/connietran-dev)
-* **Nick Morgan**: Special thanks to Nick to helped with story development
+* **Samantha Sexton**: Full stack web development, React, Sass, socket.io, wireframing - [@srsexton94](https://github.com/srsexton94), [samantha-sexton](https://www.linkedin.com/in/samantha-sexton/)
+* **Connie Tran**: Full stack web development, socket.io, Express, Node, React - [@connietran-dev](https://github.com/connietran-dev), [connietran1](https://www.linkedin.com/in/connietran1/)
+* **Nick Morgan**: Special thanks to Nick to helped with story development - [nick-morgan-471796121](http://linkedin.com/in/nick-morgan-471796121)
