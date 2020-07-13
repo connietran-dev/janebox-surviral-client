@@ -78,8 +78,27 @@ body {
 
 // SetPlayer Component
 .Set-Player {
+  h1 {
+    font-family: $title-font;
+    font-size: 3rem;
+    text-shadow: $basic-shadow;
+
+    span {
+      margin-left: 2rem;
+    }
+  }
+
   .input-field {
     width: 15rem;
+  }
+
+  .msg-txt {
+    background-color: rgba($red-text, 0.9);
+    border: 1rem solid $red-text;
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    margin-left: -5vw;
+    width: 110vw;
   }
 }
 

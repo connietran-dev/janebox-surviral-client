@@ -54,13 +54,13 @@ function SetPlayer({ location }) {
 
   return (
     <section className="Set-Player">
-      <h1>Set Player Page</h1>
       {
         (location.search.substring(10))
-        ? <h2>Your Game ID is: {game}</h2>
+        ? <h2 className="gameid-mark">Your Game ID is: {game}</h2>
         : <></>
       }
       <form id="username-form">
+        <h1>C h o o s e<span>Y o u r</span><span>C h a r a c t e r</span></h1>
         <input
           className="input-field"
           type="text"
@@ -69,7 +69,7 @@ function SetPlayer({ location }) {
         />
         <button onClick={joinUsertoGame} className="admin-button" type="submit">I'm Ready!</button>
       </form>
-      <p>{msg}</p>
+      <p className="msg-txt">{msg}</p>
       <PlayerList users={users} />
       {
         (location.search.substring(10))
