@@ -1,7 +1,8 @@
 # Surviral with JANEbox Games
 
-<!-- Put project screenshot here
-![]() -->
+![](./public/screenshots/home.png)
+<!-- ![](./public/screenshots/setplayer.png)
+![](./public/screenshots/playgame.png) -->
 
 ## Project Description
 This project is a multiplayer, storyline game that allows players to work together and defeat a viral enemy and save the world!
