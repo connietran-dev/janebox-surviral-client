@@ -46,6 +46,7 @@ export default function PlayGame({ location }) {
     }
 
     document.getElementById('player-profile').style.display = 'block'
+    document.getElementById('lets-play').style.display = 'block'
     document.getElementById('char-choice').style.display = 'none'
   }
 
@@ -69,7 +70,7 @@ export default function PlayGame({ location }) {
         <TeamLog users={users} />
         <GameContent />
         <form id="char-choice" onSubmit={chooseMajor} className="char-choice">
-          <p>Not the semester you imagined... but you still gotta study.
+          <p>Welp. Not the semester you imagined... but you still gotta study.
            <br/><span>What's your major?</span></p>
           <select id="majors" name="majors">
             <option value="engineering">Engineering</option>

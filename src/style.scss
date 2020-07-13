@@ -182,6 +182,18 @@ body {
     height: 60vh;
     margin-top: 2vh;
     width: 95vw;
+
+    #lets-play {
+      display: none;
+    }
+
+    form {
+      display: none;
+    }
+
+    #final-view {
+      display: none;
+    }
   }
 
   .player-profile {
