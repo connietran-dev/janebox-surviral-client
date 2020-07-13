@@ -17,7 +17,6 @@ function SetPlayer({ location }) {
   const ENDPOINT = apiUrl
 
   // Socket emitter for joining game
-  // location.search uses query-string to return query parameters from URL
   function joinUsertoGame(event) {
     event.preventDefault()
     if (users.length === 5) {
@@ -56,7 +55,7 @@ function SetPlayer({ location }) {
     socket.on('roomData', ({ users }) => {
       setUsers(users.filter(user => user.game === game))
     })
-  }, [msg, location]);
+  }, [msg, location, ENDPOINT]);
 
   return (
     <section className="Set-Player">

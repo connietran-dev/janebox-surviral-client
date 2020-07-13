@@ -51,15 +51,13 @@ export default function PlayGame({ location }) {
 
   useEffect(() => {
     const game = location.search.substring(6, 10)
-    // console.log('game: ', game)
-    // setGame(game)
 
     socket = io(ENDPOINT)
 
     socket.on('roomData', ({ users }) => {
       setUsers(users.filter(user => user.game === game))
     })
-  }, [location]);
+  }, [location, ENDPOINT]);
 
   return (
     <section className="Play-Game">
