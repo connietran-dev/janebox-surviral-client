@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/janebox-surviral-client/precache-manifest.0ddb922fe9173c3bf183ce904efb9e43.js"
+  "/janebox-surviral-client/precache-manifest.d21ff330259e427f4959fb72013884a5.js"
 );
 
 self.addEventListener('message', (event) => {
