@@ -1,39 +1,6 @@
 [
     {
         "prompt": {
-            "scene": "Dorm",
-            "question": "What’s your major?"
-        },
-        "choices": [
-            {
-                "answer": "Engineering",
-                "subtext": "You’ll be responsible for rebuilding a whole new world… Sounds like a lot of work.",
-                "point": 0
-            },
-            {
-                "answer": "Chemistry",
-                "subtext": "Found a vaccine yet? No? Well that baking soda and vinegar volcano is pretty cool too.",
-                "point": 0
-            },
-            {
-                "answer": "Political Science",
-                "subtext": "Down with the government! Anarchy!",
-                "point": 0
-            },
-            {
-                "answer": "Business",
-                "subtext": "You take a minute to reflect on if capitalism really might be to blame for all of this death and despair… Nah, it’s Millennials’ fault.",
-                "point": 0
-            },
-            {
-                "answer": "Photography",
-                "subtext": "At least when the world burns, you won’t have to figure out how to pay back all that college debt.",
-                "point": 0
-            }
-        ]
-    },
-    {
-        "prompt": {
             "scene": "The 7/11",
             "question": "It’s the closest thing to a grocery store on campus, and it’ll have to do. What do you scrounge up?"
         },
