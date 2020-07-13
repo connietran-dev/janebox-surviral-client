@@ -48,7 +48,7 @@ function SetPlayer({ location }) {
     })
 
     socket.on('roomData', ({ users }) => {
-      setUsers(users)
+      setUsers(users.filter(user => user.game === game))
     })
   }, [msg, location]);
 
