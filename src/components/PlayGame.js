@@ -25,22 +25,18 @@ export default function PlayGame({ location }) {
         setDescrip('You’ll be responsible for rebuilding a whole new world… Sounds like a lot of work.')
         break;
       case 'chemistry':
-        // document.getElementById('profile-img').style.background = `url('./img/humans/chemist.png') no-repeat center center scroll`
         setTitle('The Chemist')
         setDescrip('Found a vaccine yet? No? Well that baking soda and vinegar volcano is pretty cool too.')
         break;
       case 'political-science':
-        // document.getElementById('profile-img').style.background = `url('./img/humans/polisci.png') no-repeat center center scroll`
         setTitle('The PoliSci Guy')
         setDescrip('Down with the government! Anarchy!')
         break;
       case 'business':
-        // document.getElementById('profile-img').style.background = `url('./img/humans/business.png') no-repeat center center scroll`
         setTitle('Business Lady')
         setDescrip('You breifly reflect on if capitalism might be to blame for all of this death and despair… Nah, it’s Millennials’ fault.')
         break;
       case 'photography':
-        // document.getElementById('profile-img').style.background = `url('./img/humans/photog.png') no-repeat center center scroll`
         setTitle('The Photographer')
         setDescrip('At least when the world burns, you won’t have to figure out how to pay back all that college debt.')
         break;
