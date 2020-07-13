@@ -23,9 +23,6 @@ function SetPlayer({ location }) {
 
       setName(event.target.value)
 
-      const game = location.search.substring(6, 10)
-      setGame(game)
-
       // Pass callback to execute after socket.emit
       socket.emit('join', { name, game }, () => {})
 
@@ -41,18 +38,28 @@ function SetPlayer({ location }) {
   }
 
   useEffect(() => {
+    const game = location.search.substring(6, 10)
+    setGame(game)
+
     socket = io(ENDPOINT)
+
     socket.on('message', res => {
       setMsg(res.text)
     })
+
     socket.on('roomData', ({ users }) => {
       setUsers(users)
-    });
-  }, [msg]);
+    })
+  }, [msg, location]);
 
   return (
     <section className="Set-Player">
       <h1>Set Player Page</h1>
+      {
+        (location.search.substring(10))
+        ? <h2>Your Game ID is: {game}</h2>
+        : <></>
+      }
       <form id="username-form">
         <input
           className="input-field"
