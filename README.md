@@ -65,4 +65,4 @@ See [Deploying a create-react-app with routing to GitHub pages](https://levelup.
 ## Authors
 * **Samantha Sexton**: Full stack web development, React, Sass, socket.io, wireframing - [@srsexton94](https://github.com/srsexton94)
 * **Connie Tran**: Full stack web development, socket.io, Express, Node, React - [@connietran-dev](https://github.com/connietran-dev)
-* **Nick Peter**: Special thanks to Nick to helped with story development
+* **Nick Morgan**: Special thanks to Nick to helped with story development
