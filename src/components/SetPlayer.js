@@ -11,27 +11,22 @@ let socket;
 function SetPlayer({ location }) {
   const [name, setName] = useState('')
   const [game, setGame] = useState('')
-  const [users, setUsers] = useState('')
+  const [users, setUsers] = useState([])
+  const [msg, setMsg] = useState('')
   const ENDPOINT = 'localhost:5000'
 
   // Socket emitter for joining game
   // location.search uses query-string to return query parameters from URL
   function joinUsertoGame(event) {
-    if (!name) {
-      event.preventDefault()
-    } else {
+    event.preventDefault()
+    if (name) {
       setName(event.target.value)
 
       const game = location.search.substring(6, 10)
       setGame(game)
-      console.log('name: ', name, 'game: ', game)
-      console.log('users: ', users)
-      socket = io(ENDPOINT)
 
       // Pass callback to execute after socket.emit
-      socket.emit('join', { name, game }, () => {
-
-      })
+      socket.emit('join', { name, game }, () => {})
 
       // For unmounting of the component when user leaves game, emit disconnect event and turn socket
       return () => {
@@ -45,13 +40,14 @@ function SetPlayer({ location }) {
   }
 
   useEffect(() => {
-    console.log(location.search.substring(10))
     socket = io(ENDPOINT)
+    socket.on('message', res => {
+      setMsg(res.text)
+    })
     socket.on('roomData', ({ users }) => {
-      console.log(users)
       setUsers(users)
     });
-  }, [location]);
+  }, [msg]);
 
   return (
     <section className="Set-Player">
@@ -63,17 +59,14 @@ function SetPlayer({ location }) {
           placeholder="Name"
           onChange={(event) => setName(event.target.value)}
         />
-        <Link
-          onClick={joinUsertoGame}
-          to={`/set-player?game=${game}&name=${name}`}
-        >
-          <button className="admin-button">I'm Ready!</button>
-        </Link>
+        <button onClick={joinUsertoGame} className="admin-button" type="submit">I'm Ready!</button>
       </form>
       <PlayerList users={users} />
       {
         (location.search.substring(10))
-        ? <button className="admin-button">We're ready!</button>
+        ? <Link to={`/set-player?game=${game}&name=${name}`}>
+            <button className="admin-button">We're ready!</button>
+          </Link>
         : <></>
       }
     </section>
