@@ -183,8 +183,53 @@ body {
     margin-top: 2vh;
     width: 95vw;
 
+    button,
+    input {
+      background-color: rgba(0, 0, 0, 0);
+      border: 1px solid $text-color;
+      border-radius: 8px;
+      box-shadow: $basic-shadow;
+      color: $text-color;
+      font-family: $base-font;
+      font-size: 1.1rem;
+      height: 3.5rem;
+      width: 8rem;
+      cursor: pointer;
+
+      &:hover,
+      &:active {
+        background-color: rgba($red-text, 0.5);
+        border-color: rgba($red-text, 0.5);
+        transition: background-color 0.1s ease-in, border-color 0.3s ease-in;
+      }
+    }
+
+    input {
+      height: 2.5rem;
+      margin-left: 1rem;
+    }
+
+    section,
+    form {
+      margin: 20vh auto 0;
+      width: 60vw;
+
+      select {
+        border-radius: 10px;
+        font-size: 1.25rem;
+        height: 2rem;
+        width: 15rem;
+      }
+    }
+
     #lets-play {
       display: none;
+      width: 40vw;
+      font-size: 2rem;
+
+      p {
+        text-align: center;
+      }
     }
 
     form {
