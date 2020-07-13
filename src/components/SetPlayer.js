@@ -12,15 +12,19 @@ function SetPlayer({ location }) {
   const [game, setGame] = useState('')
   const [users, setUsers] = useState([])
   const [msg, setMsg] = useState('')
+  const [err, setErr] = useState('')
   const ENDPOINT = 'localhost:5000'
 
   // Socket emitter for joining game
   // location.search uses query-string to return query parameters from URL
   function joinUsertoGame(event) {
     event.preventDefault()
-    if (name) {
+    if (users.length === 5) {
+      setErr('Sorry! Only 5 can play, better luck next time!')
+    } else if (name) {
+      setErr('')
       document.getElementById('username-form').style.display = 'none'
-
+      document.getElementById('msg-txt').style.display = 'block'
       setName(event.target.value)
 
       // Pass callback to execute after socket.emit
@@ -32,7 +36,8 @@ function SetPlayer({ location }) {
 
         socket.off()
       }
-
+    } else {
+      setErr('Please enter a name (any name! be creative!)')
     }
 
   }
@@ -48,19 +53,19 @@ function SetPlayer({ location }) {
     })
 
     socket.on('roomData', ({ users }) => {
-      setUsers(users)
+      setUsers(users.filter(user => user.game === game))
     })
   }, [msg, location]);
 
   return (
     <section className="Set-Player">
-      <h1>Set Player Page</h1>
       {
         (location.search.substring(10))
-        ? <h2>Your Game ID is: {game}</h2>
+        ? <h2 className="gameid-mark">Your Game ID is: {game}</h2>
         : <></>
       }
       <form id="username-form">
+        <h1>C h o o s e<span>Y o u r</span><br />C h a r a c t e r</h1>
         <input
           className="input-field"
           type="text"
@@ -68,13 +73,14 @@ function SetPlayer({ location }) {
           onChange={(event) => setName(event.target.value)}
         />
         <button onClick={joinUsertoGame} className="admin-button" type="submit">I'm Ready!</button>
+        <p className='err-msg'>{err}</p>
       </form>
-      <p>{msg}</p>
+      <p id="msg-txt" className="msg-txt">{msg}</p>
       <PlayerList users={users} />
       {
         (location.search.substring(10))
-        ? <Link to={`/set-player?game=${game}&name=${name}`}>
-            <button className="admin-button">We're ready!</button>
+        ? <Link to={`/play?game=${game}&name=${name}`}>
+            <button id="all-ready" className="admin-button">We're ready!</button>
           </Link>
         : <></>
       }

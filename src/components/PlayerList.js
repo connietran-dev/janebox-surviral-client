@@ -1,10 +1,10 @@
 import React from 'react';
 
 const PlayerList = ({ users }) => (
-    <section className="textContainer">
+    <section className="Player-List">
         { users.length > 0
           ? (<div>
-              <h1>Players in your party:</h1>
+              <h3>Players in your party:</h3>
               <ul>
                 {users.map(({ name }) => ( <li key={name} > {name} </li>))}
               </ul>
