@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/janebox-surviral-client/static/css/main.b2463285.chunk.css",
-    "main.js": "/janebox-surviral-client/static/js/main.66391883.chunk.js",
-    "main.js.map": "/janebox-surviral-client/static/js/main.66391883.chunk.js.map",
+    "main.css": "/janebox-surviral-client/static/css/main.74019f9c.chunk.css",
+    "main.js": "/janebox-surviral-client/static/js/main.b8c41905.chunk.js",
+    "main.js.map": "/janebox-surviral-client/static/js/main.b8c41905.chunk.js.map",
     "runtime-main.js": "/janebox-surviral-client/static/js/runtime-main.deea5962.js",
     "runtime-main.js.map": "/janebox-surviral-client/static/js/runtime-main.deea5962.js.map",
-    "static/js/2.d9a47a6c.chunk.js": "/janebox-surviral-client/static/js/2.d9a47a6c.chunk.js",
-    "static/js/2.d9a47a6c.chunk.js.map": "/janebox-surviral-client/static/js/2.d9a47a6c.chunk.js.map",
+    "static/js/2.49fa92a3.chunk.js": "/janebox-surviral-client/static/js/2.49fa92a3.chunk.js",
+    "static/js/2.49fa92a3.chunk.js.map": "/janebox-surviral-client/static/js/2.49fa92a3.chunk.js.map",
     "index.html": "/janebox-surviral-client/index.html",
-    "precache-manifest.a7e3e29c5bea8ed11d97b5a6f3688ab8.js": "/janebox-surviral-client/precache-manifest.a7e3e29c5bea8ed11d97b5a6f3688ab8.js",
+    "precache-manifest.7b57c2e5a92a124be2c3d0e3a15b2702.js": "/janebox-surviral-client/precache-manifest.7b57c2e5a92a124be2c3d0e3a15b2702.js",
     "service-worker.js": "/janebox-surviral-client/service-worker.js",
-    "static/css/main.b2463285.chunk.css.map": "/janebox-surviral-client/static/css/main.b2463285.chunk.css.map",
-    "static/js/2.d9a47a6c.chunk.js.LICENSE.txt": "/janebox-surviral-client/static/js/2.d9a47a6c.chunk.js.LICENSE.txt",
+    "static/css/main.74019f9c.chunk.css.map": "/janebox-surviral-client/static/css/main.74019f9c.chunk.css.map",
+    "static/js/2.49fa92a3.chunk.js.LICENSE.txt": "/janebox-surviral-client/static/js/2.49fa92a3.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/janebox-surviral-client/static/media/polisci.558e0bba.png"
   },
   "entrypoints": [
     "static/js/runtime-main.deea5962.js",
-    "static/js/2.d9a47a6c.chunk.js",
-    "static/css/main.b2463285.chunk.css",
-    "static/js/main.66391883.chunk.js"
+    "static/js/2.49fa92a3.chunk.js",
+    "static/css/main.74019f9c.chunk.css",
+    "static/js/main.b8c41905.chunk.js"
   ]
 }
