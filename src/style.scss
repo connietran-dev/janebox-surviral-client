@@ -294,15 +294,34 @@ body {
 
     section,
     form {
-      margin: 20vh auto 0;
-      width: 60vw;
+      margin: 10vh auto 0;
+      width: 80vw;
       max-width: 30rem;
 
       select {
         border-radius: 10px;
         font-size: 1.25rem;
         height: 2rem;
-        width: 15rem;
+        width: 4rem;
+      }
+    }
+
+    form {
+      display: none;
+      height: 45vh;
+    }
+
+    ol {
+      list-style-type: upper-alpha;
+      text-align: left;
+      height: 25vh;
+      overflow-y: scroll;
+      ::-webkit-scrollbar {
+        color: white;
+      }
+
+      li {
+        margin-bottom: 1rem;
       }
     }
 
@@ -314,10 +333,6 @@ body {
       p {
         text-align: center;
       }
-    }
-
-    form {
-      display: none;
     }
 
     #final-view {

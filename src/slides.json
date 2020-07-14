@@ -68,7 +68,7 @@
     {
         "prompt": {
             "scene": "Back at the dorm",
-            "question": "You made it home in one piece, more or less! Now… if only you could remember the safest way to take off your mask, face shield, gloves, or any other PPE you happen to be wearing…"
+            "question": "You made it home in one piece, more or less! Now… if only you could remember the safest way to take off your mask, gloves, or any other PPE you happen to be wearing…"
         },
         "choices": [
             {
@@ -101,7 +101,7 @@
     {
         "prompt": {
             "scene": "Shopping for groceries",
-            "question": "Since apparently you ate all the snacks you bought at 7/11 within five minutes of getting back to the dorm, it’s probably a good idea to figure out how to get some groceries."
+            "question": "Since apparently you ate all the snacks you bought at 7/11 within five minutes of getting back to the dorm, it’s probably a good idea to get some groceries."
         },
         "choices": [
             {

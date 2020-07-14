@@ -31,25 +31,31 @@ const GameContent = () => {
   return (
     <section className="game-content">
       <section id="lets-play">
-        <p>Remember, your choices affect your whole teams outcome!<br />Are you ready?</p>
+        <p>Remember, your choices affect your whole team's outcome!<br />Are you ready?</p>
         <button onClick={onPlay}>Let's Play!</button>
       </section>
       <form id="game-content-form" onSubmit={submitAnswer}className="card">
         <h2>{slides[index].prompt.scene}</h2>
         <p>{slides[index].prompt.question}</p>
+        <ol>
+          <li>{slides[index].choices[2].answer}</li>
+          <li>{slides[index].choices[1].answer}</li>
+          <li>{slides[index].choices[0].answer}</li>
+          <li>{slides[index].choices[4].answer}</li>
+          <li>{slides[index].choices[3].answer}</li>
+        </ol>
         <select id="majors" name="majors">
-          <option value={2}>{slides[index].choices[2].answer}</option>
-          <option value={1}>{slides[index].choices[1].answer}</option>
-          <option value={0}>{slides[index].choices[0].answer}</option>
-          <option value={4}>{slides[index].choices[4].answer}</option>
-          <option value={3}>{slides[index].choices[3].answer}</option>
+          <option value={2}>A</option>
+          <option value={1}>B</option>
+          <option value={0}>C</option>
+          <option value={4}>D</option>
+          <option value={3}>E</option>
         </select>
         <input type="submit"></input>
       </form>
       <section id="final-view">
-        <p>Time to see how y'all did...</p>
         <Link to={`/game-over?game=QWER&points=${points}`}>
-          <button>Check Tally</button>
+          <button>See Final Tally?</button>
         </Link>
       </section>
     </section>
