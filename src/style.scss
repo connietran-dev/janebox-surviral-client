@@ -296,6 +296,7 @@ body {
     form {
       margin: 20vh auto 0;
       width: 60vw;
+      max-width: 30rem;
 
       select {
         border-radius: 10px;
@@ -396,6 +397,8 @@ body {
     z-index: 1;
 
     p {
+      max-width: 75vw;
+      margin: 1rem auto;
       span {
         font-size: 1.5rem;
       }
@@ -430,7 +433,6 @@ body {
 
   .team-log {
     float: right;
-
     .team-log-btn {
       border: 5px solid $red-text;
       background-color: rgba($red-text, .9);

@@ -80,7 +80,6 @@ function SetPlayer({ location }) {
       <Link to={`/play?game=${game}&name=${name}`}>
         <button id="all-ready" className="admin-button">We're ready!</button>
       </Link>
-      }
     </section>
   )
 

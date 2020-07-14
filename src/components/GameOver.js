@@ -11,11 +11,11 @@ export default function GameOver({ location }) {
       return "Dang... You lost :'("
     }
   }
-  
+
   return (
     <section className="Game-Over">
       <h1>G a m e - O v e r</h1>
-      <p className="end-msg">{msg(points)}</p>\
+      <p className="end-msg">{msg(points)}</p>
       <Link to="/">
         <button className="admin-button">Play again!</button>
       </Link>
