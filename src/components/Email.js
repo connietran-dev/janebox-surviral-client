@@ -1,13 +1,15 @@
 import React from 'react'
 
 const Email = () => {
-  function closeModal() {
+  function closeModal(event) {
+    console.log(event.target)
     document.getElementById('email').style.display = "none"
   }
   return (
-    <section id="email" className="Email">
-      <button onClick={closeModal}></button>
-      <img src="" alt="" />
+    <section onClick={closeModal} id="email" className="Email">
+      <div>
+        <p className="glow">Click anywhere to close</p>
+      </div>
     </section>
   )
 }

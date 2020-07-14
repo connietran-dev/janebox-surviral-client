@@ -497,25 +497,29 @@ body {
   }
 
   .Email {
-    background: url('./img/email-graphic.png') no-repeat center center scroll;
-    background-size: cover;
-    height: 210vh;
-    width: 110vw;
+    background-color: rgba($gray-fill, .95);
+    height: 100vh;
     position: absolute;
+    width: 100vw;
+    margin: 0;
     left: 0;
     top: 0;
     z-index: 2;
-    text-align: left;
-    margin: auto;
 
-    button {
-      background-color: red;
-      border: 1px solid red;
-      border-radius: 50%;
-      height: 2rem;
-      width: 2rem;
-      margin-left: 1rem;
-      margin-top: .75rem;
+    .glow {
+      width: 14rem;
+      border-radius: 10px;
+      margin: auto;
+      color: #fff;
+      text-align: center;
+      animation: glow 1s ease-in-out infinite alternate;
+      font-style: italic;
+    }
+
+    div {
+      background: url('./img/email-graphic.png') no-repeat center center scroll;
+      background-size: contain;
+      height: 100vh;
     }
   }
 }
@@ -537,7 +541,6 @@ body {
     margin: 5vh auto;
     font-size: 3.5rem;
     padding: 5rem 1rem;
-    // height: 50vh;
     width: 50vw;
   }
 
