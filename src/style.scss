@@ -337,7 +337,6 @@ body {
     width: 94.75vw;
 
     img {
-      // background-image: url('./img/humans/engineer.png');
       background-size: contain;
       border-radius: 50%;
       height: 12vw;
@@ -508,20 +507,22 @@ body {
     top: 0;
     z-index: 2;
 
-    .glow {
-      width: 14rem;
-      border-radius: 10px;
-      margin: auto;
-      color: #fff;
-      text-align: center;
-      animation: glow 1s ease-in-out infinite alternate;
-      font-style: italic;
-    }
-
     div {
       background: url('./img/email-graphic.png') no-repeat center center scroll;
       background-size: contain;
-      height: 100vh;
+      height: 98vh;
+
+      .glow {
+        width: 16rem;
+        border-radius: 10px;
+        margin: 0 auto;
+        color: #fff;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+        font-style: italic;
+        font-size: 2.75vh;
+        padding: .25rem 0;
+      }
     }
   }
 }
