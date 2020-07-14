@@ -63,7 +63,7 @@ export default function PlayGame({ location }) {
   return (
     <section className="Play-Game">
       <Email />
-      <Link to="/game-over">
+      <Link to="/">
         <button className="admin-button">X</button>
       </Link>
       <main>
