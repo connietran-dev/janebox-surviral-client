@@ -5,7 +5,7 @@ export default function GameOver({ location }) {
   const points = parseInt(location.search.substring(18))
 
   const msg = points => {
-    if (points > 6) {
+    if (points >= 5) {
       return 'Congrats! You won!'
     } else {
       return "Dang... You lost :'("

@@ -40,8 +40,19 @@ body {
     }
   }
 
+  .glow {
+    width: 16rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-style: italic;
+    font-size: 2.75vh;
+    padding: .25rem 0;
+  }
+
   .input-field {
-    // background-color: rgba(white, 0.9);
     border-radius: 8px;
     font-size: 2rem;
     font-family: $base-font;
@@ -168,6 +179,7 @@ body {
       font-size: 3rem;
       text-shadow: $basic-shadow;
       margin: .5rem auto;
+      max-width: 95vw;
 
       span {
         margin-left: 2rem;
@@ -190,11 +202,17 @@ body {
     background-color: rgba($gray-fill, .85);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    margin: auto;
+    margin: -.5rem auto 3rem;
     height: 4rem;
-    width: 20rem;
+    width: 22rem;
+    max-width: 95vw;
     padding-top: 2rem;
-    margin-top: -.5rem;
+
+    span {
+      font-size: 2rem;
+      margin-left: .5rem;
+      text-decoration: underline;
+    }
   }
 
   .msg-txt {
@@ -212,6 +230,7 @@ body {
     background-color: rgba($gray-fill, .85);
     border-radius: 15px;
     width: 20rem;
+    max-width: 95vw;
     padding: 1rem;
     margin: 2rem auto;
 
@@ -292,42 +311,46 @@ body {
       margin-left: 1rem;
     }
 
-    section,
-    form {
-      margin: 10vh auto 0;
-      width: 80vw;
-      max-width: 30rem;
-
-      select {
-        border-radius: 10px;
-        font-size: 1.25rem;
-        height: 2rem;
-        width: 4rem;
-      }
-    }
-
-    form {
-      display: none;
-      height: 45vh;
-    }
-
     ol {
       list-style-type: upper-alpha;
       text-align: left;
       height: 25vh;
       overflow-y: scroll;
-      ::-webkit-scrollbar {
-        color: white;
-      }
 
       li {
         margin-bottom: 1rem;
       }
     }
 
-    #lets-play {
+    #sassy-modal {
+      background-color: rgba($gray-fill, .95);
+      border-radius: 15px;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      margin: 0;
+      left: 0;
+      top: 0;
+      z-index: 2;
       display: none;
-      width: 40vw;
+
+      .sass {
+        margin: 15vh auto 0;
+        height: 30vh;
+        width: 35rem;
+        max-width: 95vw;
+        font-size: 1.5rem;
+      }
+
+      .glow {
+        margin: 30vh auto 0;
+      }
+    }
+
+    #lets-play {
+      margin: 15vh auto 0;
+      display: none;
+      width: 25rem;
       font-size: 2rem;
 
       p {
@@ -335,8 +358,38 @@ body {
       }
     }
 
-    #final-view {
+    #game-content {
+      margin: 10vh auto 0;
+      width: 80vw;
+      min-width: 26rem;
+      text-align: left;
       display: none;
+      height: 40vh;
+
+      select {
+        border-radius: 10px;
+        font-size: 1.25rem;
+        height: 2rem;
+        width: 4rem;
+      }
+
+      #game-content-form {
+        float: right;
+      }
+    }
+
+    #final-view {
+      margin: 25vh 0;
+      display: none;
+      button {
+        position: relative;
+        margin: auto;
+        width: 20rem;
+        max-width: 90vw;
+        height: 10rem;
+        font-size: 2.5rem;
+        font-family: $title-font;
+      }
     }
   }
 
@@ -454,8 +507,9 @@ body {
       height: 8vh;
       min-height: 2rem;
       margin-top: -1rem;
-      width: 35vw;
-      min-width: 20rem;
+      margin-right: -.5rem;
+      width: 22rem;
+      max-width: 90vw;
       font-family: $title-font;
       color: rgba($text-color, .8);
       cursor: pointer;
@@ -490,8 +544,8 @@ body {
       height: 55vh;
       margin: auto;
       margin-top: -3rem;
-      width: 30vw;
-      min-width: 15rem;
+      width: 18rem;
+      max-width: 88vw;
 
       li {
         list-style: none;
@@ -520,24 +574,12 @@ body {
     margin: 0;
     left: 0;
     top: 0;
-    z-index: 2;
+    z-index: 3;
 
     div {
       background: url('./img/email-graphic.png') no-repeat center center scroll;
       background-size: contain;
       height: 98vh;
-
-      .glow {
-        width: 16rem;
-        border-radius: 10px;
-        margin: 0 auto;
-        color: #fff;
-        text-align: center;
-        animation: glow 1s ease-in-out infinite alternate;
-        font-style: italic;
-        font-size: 2.75vh;
-        padding: .25rem 0;
-      }
     }
   }
 }
@@ -559,11 +601,13 @@ body {
     margin: 5vh auto;
     font-size: 3.5rem;
     padding: 5rem 1rem;
-    width: 50vw;
+    width: 35rem;
+    max-width: 80vw;
   }
 
   .admin-button {
-    height: 6rem;
-    width: 10rem;
+    height: 5rem;
+    width: 11rem;
+    font-size: 1.5rem;
   }
 }

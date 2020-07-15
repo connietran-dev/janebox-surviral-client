@@ -31,7 +31,7 @@ function Home() {
 
       <div>
         <h5>
-          This project was built in a <a rel="noreferrer noopener" href="https://sites.google.com/mintbean.io/2020-07-10-multiplayer-hackath/home?authuser=2" target="_blank">multi-day hackathon</a> hosted by <a rel="noreferrer noopener" className="mintbean" href="https://www.mintbean.io/" target="_blank">Mint<span>bean</span></a>
+          This project was built in a <a rel="noreferrer noopener" href="https://sites.google.com/mintbean.io/2020-07-10-multiplayer-hackath/home?authuser=2" target="_blank">weekend hackathon</a> hosted by <a rel="noreferrer noopener" className="mintbean" href="https://www.mintbean.io/" target="_blank">Mint<span>bean</span></a>
         </h5>
       </div>
       <Link className="home-link" to="/">G o<br/><span>H o m e</span></Link>

@@ -61,7 +61,7 @@ function SetPlayer({ location }) {
     <section className="Set-Player">
       {
         (location.search.substring(10))
-        ? <h2 className="gameid-mark">Your Game ID is: {game}</h2>
+        ? <h2 className="gameid-mark">Your Game ID is: <span>{game}</span></h2>
         : <></>
       }
       <form id="username-form">
