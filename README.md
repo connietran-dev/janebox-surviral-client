@@ -1,4 +1,4 @@
-# Surviral with JANEbox Games
+# SurViral with JANEbox Games
 
 ![Surviral homescreen](./public/screenshots/home.png)
 
@@ -26,7 +26,7 @@ Choose your player using socket.io to display players in the party:
 
 Main game play:
 
-![Main game screen](./public/screenshots/playgame2.png)
+![Main game screen](./public/screenshots/gameplay.png)
 
 University email:
 
