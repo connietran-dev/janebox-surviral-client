@@ -3,6 +3,8 @@ import React from 'react';
 const TeamLog = ({ users }) => {
   function toggleTeamLog() {
     var x = document.getElementById('players-ul')
+    x.style.height = `${users.length * 5}rem`
+    
     if (x.style.display === "none") {
       x.style.display = "inline-block";
     } else {
