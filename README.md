@@ -30,7 +30,7 @@ Main game play:
 
 University email:
 
-![University email](./src/img/email-graphic.png)
+![University email](./src/assets/images/email-graphic.png)
 
 ## Future Goals
 

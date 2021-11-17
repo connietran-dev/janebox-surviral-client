@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TeamLog = ({ users }) => {
+export const TeamLog = ({ users }) => {
   function toggleTeamLog() {
     var x = document.getElementById('players-ul')
     x.style.height = `${users.length * 5}rem`
@@ -23,5 +23,3 @@ const TeamLog = ({ users }) => {
     </ul>
   </section>
 )}
-
-export default TeamLog;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PlayerList = ({ users }) => (
+export const PlayerList = ({ users }) => (
     <section className="Player-List">
         { users.length > 0
           ? (<div>
@@ -13,4 +13,3 @@ const PlayerList = ({ users }) => (
     </section>
 );
 
-export default PlayerList;

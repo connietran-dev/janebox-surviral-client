@@ -1,0 +1,87 @@
+@import '../../assets/styles/variables.scss';
+
+.Set-Player {
+  #username-form {
+    h1 {
+      font-family: $title-font;
+      font-size: 3rem;
+      text-shadow: $basic-shadow;
+      margin: .5rem auto;
+      max-width: 95vw;
+
+      span {
+        margin-left: 2rem;
+      }
+    }
+
+    .input-field {
+      width: 15rem;
+    }
+
+    .err-msg {
+      background-color: rgba($gray-fill, 0.3);
+      color: red;
+      margin: 5px auto;
+      width: 30vw;
+    }
+  }
+
+  .gameid-mark {
+    background-color: rgba($gray-fill, .85);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: -.5rem auto 3rem;
+    height: 4rem;
+    width: 22rem;
+    max-width: 95vw;
+    padding-top: 2rem;
+
+    span {
+      font-size: 2rem;
+      margin-left: .5rem;
+      text-decoration: underline;
+    }
+  }
+
+  .msg-txt {
+    display: none;
+    background-color: rgba($red-text, 0.7);
+    border: 1vw solid rgba($red-text, 0.75);
+    font-size: 3.5vw;
+    margin: .5rem auto;
+    text-align: center;
+    width: 60vw;
+    min-width: 25rem;
+  }
+
+  .Player-List {
+    background-color: rgba($gray-fill, .85);
+    border-radius: 15px;
+    width: 20rem;
+    max-width: 95vw;
+    padding: 1rem;
+    margin: 2rem auto;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    ul {
+      text-align: left;
+      margin: auto;
+      width: 12rem;
+      font-size: 1.5rem;
+      height: 22vh;
+      overflow-x: scroll;
+    }
+  }
+
+  #all-ready {
+    font-size: 1.5rem;
+    font-weight: 900;
+    height: 6rem;
+    width: 12rem;
+  }
+}

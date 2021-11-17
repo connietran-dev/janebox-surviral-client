@@ -2,15 +2,13 @@ import React, { useState, useEffect }  from 'react'
 import { Link } from 'react-router-dom'
 import io from 'socket.io-client'
 
-import apiUrl from '../apiConfig'
+import apiUrl from '../../apiConfig'
 
-import TeamLog from './TeamLog'
-import Email from './Email'
-import GameContent from './GameContent'
+import { Email, GameContent, TeamLog } from '../../components'
 
 let socket;
 
-export default function PlayGame({ location }) {
+export function PlayGame({ location }) {
   const [users, setUsers] = useState([])
   const [title, setTitle] = useState('')
   const [descrip, setDescrip] = useState('')

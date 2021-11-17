@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import slides from '../slides.json'
 
-const GameContent = () => {
+export const GameContent = () => {
   const [index, setIndex] = useState(0)
   const [points, setPoints] = useState(0)
   const [sass, setSass] = useState('')
@@ -103,5 +103,3 @@ const GameContent = () => {
     </section>
   )
 }
-
-export default GameContent
