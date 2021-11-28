@@ -1,0 +1,28 @@
+@import '../../assets/styles/variables.scss';
+
+.Game-Over {
+  h1 {
+    font-family: $title-font;
+    font-size: 5rem;
+    text-shadow: $basic-shadow;
+    margin-bottom: 0;
+  }
+
+  .end-msg {
+    background-color: rgba($gray-fill, 0.95);
+    border: 2px solid $text-color;
+    border-radius: 15px;
+    box-shadow: $basic-shadow;
+    margin: 5vh auto;
+    font-size: 3.5rem;
+    padding: 5rem 1rem;
+    width: 35rem;
+    max-width: 80vw;
+  }
+
+  .admin-button {
+    height: 5rem;
+    width: 11rem;
+    font-size: 1.5rem;
+  }
+}

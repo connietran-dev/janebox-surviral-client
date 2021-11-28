@@ -1,0 +1,328 @@
+@import '../../assets/styles/variables.scss';
+
+.Play-Game {
+  main {
+    background-color: rgba($gray-fill, 0.95);
+    border: 1px solid $text-color;
+    border-radius: 15px;
+    box-shadow: $basic-shadow;
+    display: inline-block;
+    margin: 5vh auto 0;
+    height: 90vh;
+    width: 95vw;
+    position: relative;
+  }
+  // 'X' out button (ie. to game-over nav)
+  .admin-button {
+    background-color: rgba($gray-fill, 0.85);
+    position: absolute;
+    left: .5rem;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .game-content {
+    height: 60vh;
+    margin-top: 2vh;
+    width: 95vw;
+
+    button,
+    input {
+      background-color: rgba(0, 0, 0, 0);
+      border: 1px solid $text-color;
+      border-radius: 8px;
+      box-shadow: $basic-shadow;
+      color: $text-color;
+      font-family: $base-font;
+      font-size: 1.1rem;
+      height: 3.5rem;
+      width: 8rem;
+      cursor: pointer;
+
+      &:hover,
+      &:active {
+        background-color: rgba($red-text, 0.5);
+        border-color: rgba($red-text, 0.5);
+        transition: background-color 0.1s ease-in, border-color 0.3s ease-in;
+      }
+    }
+
+    input {
+      height: 2.5rem;
+      margin-left: 1rem;
+    }
+
+    ol {
+      list-style-type: upper-alpha;
+      text-align: left;
+      height: 25vh;
+      overflow-y: scroll;
+
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+
+    #sassy-modal {
+      background-color: rgba($gray-fill, .95);
+      border-radius: 15px;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      margin: 0;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      display: none;
+
+      .sass {
+        margin: 15vh auto 0;
+        height: 30vh;
+        width: 35rem;
+        max-width: 95vw;
+        font-size: 1.5rem;
+      }
+
+      .glow {
+        margin: 30vh auto 0;
+      }
+    }
+
+    #lets-play {
+      margin: 15vh auto 0;
+      display: none;
+      width: 25rem;
+      font-size: 2rem;
+
+      p {
+        text-align: center;
+      }
+    }
+
+    #game-content {
+      margin: 10vh auto 0;
+      width: 80vw;
+      min-width: 26rem;
+      text-align: left;
+      display: none;
+      height: 40vh;
+
+      select {
+        border-radius: 10px;
+        font-size: 1.25rem;
+        height: 2rem;
+        width: 4rem;
+      }
+
+      #game-content-form {
+        float: right;
+      }
+    }
+
+    #final-view {
+      margin: 25vh 0;
+      display: none;
+      button {
+        position: relative;
+        margin: auto;
+        width: 20rem;
+        max-width: 90vw;
+        height: 10rem;
+        font-size: 2.5rem;
+        font-family: $title-font;
+      }
+    }
+  }
+
+  .player-profile {
+    display: none;
+    background-color: rgba($med-gray-fill, .9);
+    border: 1px solid $med-gray-fill;
+    border-radius: 15px;
+    bottom: 0;
+    height: 9rem;
+    position: absolute;
+    padding-bottom: 2vh;
+    width: 94.75vw;
+
+    img {
+      background-size: contain;
+      border-radius: 50%;
+      height: 12vw;
+      min-height: 11rem;
+      float: left;
+      margin-left: 1.5rem;
+      margin-top: -5.5rem;
+      width: 12vw;
+      min-width: 11rem;
+    }
+
+    .engineering {
+      background-image: url('./assets/images/humans/engineer.png');
+    }
+
+    .chemistry {
+      background-image: url('./assets/images/humans/chemist.png');
+    }
+
+    .political-science {
+      background-image: url('./assets/images/humans/polisci.png');
+    }
+
+    .business {
+      background-image: url('./assets/images/humans/business.png');
+    }
+
+    .photography {
+      background-image: url('./assets/images/humans/photog.png');
+    }
+
+    .char-descrip {
+      float: left;
+      text-align: left;
+      h3 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-shadow: $basic-shadow;
+        margin: -3rem 0 0 1rem;
+      }
+      p {
+        float: left;
+        width: 25rem;
+        margin: 0 0 0 1rem;
+      }
+    }
+  }
+
+  .char-choice {
+    background-color: rgba($med-gray-fill, .9);
+    border: 1px solid $med-gray-fill;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-bottom: 1rem;
+    height: 11rem;
+    position: relative;
+    z-index: 1;
+
+    p {
+      max-width: 75vw;
+      margin: 1rem auto;
+      span {
+        font-size: 1.5rem;
+      }
+    }
+
+    select {
+      border-radius: 10px;
+      font-size: 1rem;
+      height: 2.5rem;
+      width: 9rem;
+    }
+
+    input {
+      border-radius: 10px;
+      height: 2.5rem;
+      margin-left: .5rem;
+      width: 4.5rem;
+      background-color: rgba(0, 0, 0, 0);
+      border: 1px solid $text-color;
+      box-shadow: $basic-shadow;
+      color: $text-color;
+      font-family: $base-font;
+
+      &:hover,
+      &:active {
+        background-color: rgba($red-text, 0.5);
+        border-color: rgba($red-text, 0.5);
+        transition: background-color 0.1s ease-in, border-color 0.3s ease-in;
+      }
+    }
+  }
+
+  .team-log {
+    float: right;
+
+    .team-log-btn {
+      border: 5px solid $red-text;
+      background-color: rgba($red-text, .9);
+      border-radius: 10px;
+      height: 8vh;
+      min-height: 2rem;
+      margin-top: -1rem;
+      margin-right: -.5rem;
+      width: 22rem;
+      max-width: 90vw;
+      font-family: $title-font;
+      color: rgba($text-color, .8);
+      cursor: pointer;
+
+      &:hover,
+      &:active {
+        background-color: rgba($red-text, 1);
+        border-color: rgba($red-text, 1);
+        transition: background-color 0.1s ease-in, border-color 0.3s ease-in;
+      }
+
+      h5 {
+        float: left;
+        font-size: 5vh;
+        margin-left: 1rem;
+        margin-top: .5rem;
+      }
+
+      p {
+        float: right;
+        font-size: 7vh;
+        margin-top: 0;
+        margin-right: 2vw;
+      }
+    }
+
+    ul {
+      background-color: rgba($red-text, .5);
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      display: none;
+      height: 25rem;
+      max-height: 55vh;
+      margin: auto;
+      margin-top: -3rem;
+      width: 18rem;
+      max-width: 88vw;
+
+      li {
+        list-style: none;
+        font-size: 1.5rem;
+        padding-top: 5vh;
+        padding-left: 0;
+        margin-left: -2rem;
+
+        &:before {
+          content: '';
+          display: inline-block;
+          height: 30px;
+          width: 30px;
+          margin-right: 1rem;
+          background-image: url('./assets/images/controller.png');
+        }
+      }
+    }
+  }
+
+  .Email {
+    background-color: rgba($gray-fill, .95);
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+    margin: 0;
+    left: 0;
+    top: 0;
+    z-index: 3;
+
+    div {
+      background: url('./assets/images/email-graphic.png') no-repeat center center scroll;
+      background-size: contain;
+      height: 98vh;
+    }
+  }
+}

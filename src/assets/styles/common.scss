@@ -1,0 +1,40 @@
+@import './variables.scss';
+
+.admin-button {
+  background-color: $gray-fill;
+  border: .0625rem solid $text-color;
+  border-radius: .5rem;
+  color: $text-color;
+  font-size: 1.1rem;
+  height: 3.5rem;
+  width: 8rem;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: rgba($red-text, .75);
+    border-color: rgba($red-text, .75);
+    transition: background-color .1s ease-in, border-color .3s ease-in;
+  }
+}
+
+.glow {
+  animation: glow 1s ease-in-out infinite alternate;
+  border-radius: .625rem;
+  color: $text-color;
+  font-size: 2.75vh;
+  font-style: italic;
+  margin: 0 auto;
+  padding: .25rem 0;
+  text-align: center;
+  width: 16rem;
+}
+
+.input-field {
+  border-radius: .5rem;
+  font-size: 2rem;
+  font-family: $base-font;
+  height: 3rem;
+  margin-right: .25rem;
+  width: 8rem;
+}

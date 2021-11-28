@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function GameOver({ location }) {
+import './GameOver.scss'
+
+export function GameOver({ location }) {
   const points = parseInt(location.search.substring(18))
 
   const msg = points => {

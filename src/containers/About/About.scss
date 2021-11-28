@@ -1,0 +1,73 @@
+@import '../../assets/styles/variables.scss';
+
+.About {
+  margin-top: 4rem;
+
+  .title {
+    font-family: $title-font;
+    font-size: 2.5rem;
+    text-shadow: $basic-shadow;
+
+    span {
+      margin-left: 2.5rem;
+    }
+  }
+
+  .description {
+    background-color: rgba($text-color, .4);
+    border: .5rem solid $red-text;
+    border-radius: 15px;
+    width: 25rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    text-shadow: 1px 1.5px 1px rgba($gray-fill, .6);
+  }
+
+  .project-links {
+    width: 15rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+
+    .link-list {
+      list-style: square;
+      width: 50%;
+      margin: auto;
+
+      .link {
+        color: $text-color;
+        &:visited {
+          color: $text-color;
+        }
+      }
+    }
+  }
+
+  .mintbean {
+    font-size: 1.5rem;
+    color: #3ee5b3;
+    text-decoration: none;
+
+    span {
+      color: #0E9CD0;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
+  .home-link {
+    color: $text-color;
+    font-family: $title-font;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+}

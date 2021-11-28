@@ -1,8 +1,7 @@
 import React from 'react'
 
-const Email = () => {
+export const Email = () => {
   function closeModal(event) {
-    console.log(event.target)
     document.getElementById('email').style.display = "none"
   }
   return (
@@ -13,5 +12,3 @@ const Email = () => {
     </section>
   )
 }
-
-export default Email

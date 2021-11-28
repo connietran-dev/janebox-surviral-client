@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter as Router } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 
-import App from './components/App';
-import './style.scss'
+import { Home, SetPlayer, PlayGame, GameOver, About } from './containers'
+import './style.scss';
 
 ReactDOM.render(
-  <Router basename='/'>
-    <App />
-  </Router>,
+  <HashRouter basename='/'>
+    <Switch>
+      <Route component={Home} exact path="/" />
+      <Route component={SetPlayer} path="/set-player" />
+      <Route component={PlayGame} path="/play" />
+      <Route component={GameOver} path="/game-over" />
+      <Route component={About} path="/about" />
+    </Switch>
+  </HashRouter>,
   document.getElementById('root')
 );

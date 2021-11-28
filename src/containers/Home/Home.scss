@@ -1,0 +1,42 @@
+@import '../../assets/styles/variables.scss';
+
+.Home {
+  float: right;
+  margin: 45vh 5vw 5vh 0;
+  max-width: 34rem;
+  min-height: 50vh;
+  text-shadow: $basic-shadow;
+  width: 95vw;
+
+  .intro {
+    .title {
+      font-family: $title-font;
+      font-size: 5rem;
+      margin: 0 auto;
+
+      span {
+        color: $red-text;
+      }
+    }
+
+    .intro {
+      margin: .25rem;
+    }
+  }
+
+  .menu-opt {
+    display: inline-block;
+    margin: .5rem;
+  }
+
+  .menu {
+    margin-bottom: .5rem;
+  }
+
+  .about-link {
+    color: $text-color;
+    font-weight: bold;
+    text-shadow: $basic-shadow;
+    font-size: .85rem;
+  }
+}

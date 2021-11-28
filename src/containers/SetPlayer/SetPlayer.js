@@ -1,14 +1,13 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react'
 import io from 'socket.io-client'
-import apiUrl from '../apiConfig'
 
-import PlayerList from './PlayerList'
+import apiUrl from '../../apiConfig'
+import { PlayerList } from '../../components'
 
 let socket;
 
-function SetPlayer({ location }) {
+export function SetPlayer({ location }) {
   const [name, setName] = useState('')
   const [game, setGame] = useState('')
   const [users, setUsers] = useState([])
@@ -84,5 +83,3 @@ function SetPlayer({ location }) {
   )
 
 }
-
-export default SetPlayer;
